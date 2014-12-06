@@ -1,0 +1,15 @@
+D:\MasterApp\WPEx\LinqEx\bin\Debug\LinqEx.exe.config
+D:\MasterApp\WPEx\LinqEx\bin\Debug\LinqEx.exe
+D:\MasterApp\WPEx\LinqEx\bin\Debug\LinqEx.pdb
+D:\MasterApp\WPEx\LinqEx\obj\Debug\LinqEx.csprojResolveAssemblyReference.cache
+D:\MasterApp\WPEx\LinqEx\obj\Debug\LinqEx.exe
+D:\MasterApp\WPEx\LinqEx\obj\Debug\LinqEx.pdb
+D:\MasterApp\Windows\LinqEx\bin\Debug\LinqEx.exe.config
+D:\MasterApp\Windows\LinqEx\obj\Debug\LinqEx.exe
+D:\MasterApp\Windows\LinqEx\obj\Debug\LinqEx.pdb
+D:\_gitHub\masterApp_windows\LinqEx\bin\Debug\LinqEx.exe.config
+D:\_gitHub\masterApp_windows\LinqEx\bin\Debug\LinqEx.exe
+D:\_gitHub\masterApp_windows\LinqEx\bin\Debug\LinqEx.pdb
+D:\_gitHub\masterApp_windows\LinqEx\obj\Debug\LinqEx.csprojResolveAssemblyReference.cache
+D:\_gitHub\masterApp_windows\LinqEx\obj\Debug\LinqEx.exe
+D:\_gitHub\masterApp_windows\LinqEx\obj\Debug\LinqEx.pdb
