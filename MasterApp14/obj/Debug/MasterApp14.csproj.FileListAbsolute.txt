@@ -3,3 +3,7 @@ C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\b
 C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\obj\Debug\MasterApp14.csprojResolveAssemblyReference.cache
 C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\obj\Debug\MasterApp14.exe
 C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\obj\Debug\MasterApp14.pdb
+D:\_gitHub\masterApp_windows\MasterApp14\obj\Debug\MasterApp14.exe
+D:\_gitHub\masterApp_windows\MasterApp14\bin\Debug\MasterApp14.exe
+D:\_gitHub\masterApp_windows\MasterApp14\bin\Debug\MasterApp14.pdb
+D:\_gitHub\masterApp_windows\MasterApp14\obj\Debug\MasterApp14.pdb

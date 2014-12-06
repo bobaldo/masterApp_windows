@@ -91,8 +91,6 @@ namespace MasterApp14
             ret.Capacity = a.Count + b.Count;
 
             Array.Copy(a.data, ret.data, a.Count);
-            Array.Copy(b.data, ret.data, a.Count, b.Count);
-            ret.
             return ret;
         }
     }

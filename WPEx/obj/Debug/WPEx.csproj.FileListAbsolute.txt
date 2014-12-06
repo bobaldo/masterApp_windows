@@ -7,3 +7,9 @@ D:\MasterApp\WPEx\WPEx\obj\Debug\WPEx.pdb
 D:\MasterApp\Windows\WPEx\bin\Debug\WPEx.exe.config
 D:\MasterApp\Windows\WPEx\obj\Debug\WPEx.exe
 D:\MasterApp\Windows\WPEx\obj\Debug\WPEx.pdb
+D:\_gitHub\masterApp_windows\WPEx\bin\Debug\WPEx.exe.config
+D:\_gitHub\masterApp_windows\WPEx\obj\Debug\WPEx.exe
+D:\_gitHub\masterApp_windows\WPEx\obj\Debug\WPEx.pdb
+D:\_gitHub\masterApp_windows\WPEx\bin\Debug\WPEx.exe
+D:\_gitHub\masterApp_windows\WPEx\bin\Debug\WPEx.pdb
+D:\_gitHub\masterApp_windows\WPEx\obj\Debug\WPEx.csprojResolveAssemblyReference.cache
