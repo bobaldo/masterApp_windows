@@ -1,0 +1,5 @@
+C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\bin\Debug\MasterApp14.exe
+C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\bin\Debug\MasterApp14.pdb
+C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\obj\Debug\MasterApp14.csprojResolveAssemblyReference.cache
+C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\obj\Debug\MasterApp14.exe
+C:\Users\Bobaldo\documents\visual studio 2013\Projects\MasterApp14\MasterApp14\obj\Debug\MasterApp14.pdb

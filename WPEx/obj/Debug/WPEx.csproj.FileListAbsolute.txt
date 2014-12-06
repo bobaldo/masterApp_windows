@@ -1,0 +1,9 @@
+D:\MasterApp\WPEx\WPEx\bin\Debug\WPEx.exe.config
+D:\MasterApp\WPEx\WPEx\bin\Debug\WPEx.exe
+D:\MasterApp\WPEx\WPEx\bin\Debug\WPEx.pdb
+D:\MasterApp\WPEx\WPEx\obj\Debug\WPEx.csprojResolveAssemblyReference.cache
+D:\MasterApp\WPEx\WPEx\obj\Debug\WPEx.exe
+D:\MasterApp\WPEx\WPEx\obj\Debug\WPEx.pdb
+D:\MasterApp\Windows\WPEx\bin\Debug\WPEx.exe.config
+D:\MasterApp\Windows\WPEx\obj\Debug\WPEx.exe
+D:\MasterApp\Windows\WPEx\obj\Debug\WPEx.pdb
