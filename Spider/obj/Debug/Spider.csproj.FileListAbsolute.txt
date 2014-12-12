@@ -1,0 +1,12 @@
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\Spider.exe.config
+D:\_gitHub\masterApp_windows\Spider\obj\Debug\Spider.csprojResolveAssemblyReference.cache
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\Spider.mdf
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\Spider_log.ldf
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\Spider.exe
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\Spider.pdb
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\EntityFramework.dll
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\EntityFramework.SqlServer.dll
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\EntityFramework.xml
+D:\_gitHub\masterApp_windows\Spider\bin\Debug\EntityFramework.SqlServer.xml
+D:\_gitHub\masterApp_windows\Spider\obj\Debug\Spider.exe
+D:\_gitHub\masterApp_windows\Spider\obj\Debug\Spider.pdb

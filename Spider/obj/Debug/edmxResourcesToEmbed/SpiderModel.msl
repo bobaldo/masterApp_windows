@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SpiderModelStoreContainer" CdmEntityContainer="SpiderEntities">
+    <EntitySetMapping Name="urls">
+      <EntityTypeMapping TypeName="SpiderModel.url">
+        <MappingFragment StoreEntitySet="url">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="uri" ColumnName="url" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
