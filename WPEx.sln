@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterApp14", "MasterApp14\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExWithAwait", "ExWithAwait\ExWithAwait.csproj", "{0139E6D9-9C20-4CF4-B8D6-F8E1E355AD48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spider", "Spider\Spider.csproj", "{16ABC028-145D-447B-9DF3-C73170BA5725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0139E6D9-9C20-4CF4-B8D6-F8E1E355AD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0139E6D9-9C20-4CF4-B8D6-F8E1E355AD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0139E6D9-9C20-4CF4-B8D6-F8E1E355AD48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16ABC028-145D-447B-9DF3-C73170BA5725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16ABC028-145D-447B-9DF3-C73170BA5725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16ABC028-145D-447B-9DF3-C73170BA5725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16ABC028-145D-447B-9DF3-C73170BA5725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

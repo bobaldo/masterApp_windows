@@ -25,27 +25,28 @@ namespace Spider
 
             foreach (var m in mat)
             {
-                write
+                //write
             }
+            return new string[1];
         }
 
-        static void Main(string[] args)
-        {
-            var maxDepth = 5;
-            var sites = new string[] { "http://www.davidepatrizi.com" };
+        //static void Main(string[] args)
+        //{
+        //    var maxDepth = 5;
+        //    var sites = new string[] { "http://www.davidepatrizi.com" };
 
 
 
-            foreach (var i in sites)
-            {
-                var urls = GetUrlsAsync(i);
+        //    foreach (var i in sites)
+        //    {
+        //        var urls = GetUrlsAsync(i);
 
-                foreach (var a in urls.Result)
-                {
-                    write(1, a, "aaa", "bbb");
-                }
-            }
-        }
+        //        foreach (var a in urls.Result)
+        //        {
+        //            write(1, a, "aaa", "bbb");
+        //        }
+        //    }
+        //}
 
         private static void write(int depth, string uri, string type, string content)
         {
