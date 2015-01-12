@@ -1,0 +1,9 @@
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\bin\Debug\Esempio Grafica.exe.config
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\bin\Debug\Esempio Grafica.exe
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\bin\Debug\Esempio Grafica.pdb
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\obj\Debug\Esempio Grafica.csprojResolveAssemblyReference.cache
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\obj\Debug\Esempio_Grafica.Form1.resources
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\obj\Debug\Esempio_Grafica.Properties.Resources.resources
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\obj\Debug\Esempio Grafica.csproj.GenerateResource.Cache
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\obj\Debug\Esempio Grafica.exe
+D:\_gitHub\masterApp_windows\Esempio Grafica\Esempio Grafica\obj\Debug\Esempio Grafica.pdb
