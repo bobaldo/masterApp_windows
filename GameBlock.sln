@@ -5,17 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameBlock", "GameBlock", "{D83B779B-5358-4873-83D4-2AA299BAE07E}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GameBlock.Shared", "GameBlock\GameBlock.Shared\GameBlock.Shared.shproj", "{01CEA068-D7BB-44C6-9AD0-DE63859B7F32}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GameBlock.Shared", "GameBlock\GameBlock\GameBlock.Shared\GameBlock.Shared.shproj", "{01CEA068-D7BB-44C6-9AD0-DE63859B7F32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBlock.Windows", "GameBlock\GameBlock.Windows\GameBlock.Windows.csproj", "{A1EB4DBC-3F56-4F16-BA0F-24A6BD0EAAE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBlock.Windows", "GameBlock\GameBlock\GameBlock.Windows\GameBlock.Windows.csproj", "{A1EB4DBC-3F56-4F16-BA0F-24A6BD0EAAE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBlock.WindowsPhone", "GameBlock\GameBlock.WindowsPhone\GameBlock.WindowsPhone.csproj", "{AA9CEE1B-E78C-4F3D-B48D-792113B04FB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBlock.WindowsPhone", "GameBlock\GameBlock\GameBlock.WindowsPhone\GameBlock.WindowsPhone.csproj", "{AA9CEE1B-E78C-4F3D-B48D-792113B04FB5}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		GameBlock\GameBlock.Shared\GameBlock.Shared.projitems*{a1eb4dbc-3f56-4f16-ba0f-24a6bd0eaae8}*SharedItemsImports = 4
-		GameBlock\GameBlock.Shared\GameBlock.Shared.projitems*{01cea068-d7bb-44c6-9ad0-de63859b7f32}*SharedItemsImports = 13
-		GameBlock\GameBlock.Shared\GameBlock.Shared.projitems*{aa9cee1b-e78c-4f3d-b48d-792113b04fb5}*SharedItemsImports = 4
+		GameBlock\GameBlock\GameBlock.Shared\GameBlock.Shared.projitems*{a1eb4dbc-3f56-4f16-ba0f-24a6bd0eaae8}*SharedItemsImports = 4
+		GameBlock\GameBlock\GameBlock.Shared\GameBlock.Shared.projitems*{01cea068-d7bb-44c6-9ad0-de63859b7f32}*SharedItemsImports = 13
+		GameBlock\GameBlock\GameBlock.Shared\GameBlock.Shared.projitems*{aa9cee1b-e78c-4f3d-b48d-792113b04fb5}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,7 +78,5 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{01CEA068-D7BB-44C6-9AD0-DE63859B7F32} = {D83B779B-5358-4873-83D4-2AA299BAE07E}
-		{A1EB4DBC-3F56-4F16-BA0F-24A6BD0EAAE8} = {D83B779B-5358-4873-83D4-2AA299BAE07E}
-		{AA9CEE1B-E78C-4F3D-B48D-792113B04FB5} = {D83B779B-5358-4873-83D4-2AA299BAE07E}
 	EndGlobalSection
 EndGlobal
