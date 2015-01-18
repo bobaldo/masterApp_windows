@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>798073c2-ccee-48ff-b064-975ea29027a2</PackageIdentityName>
     <IntermediateOutputPath>D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>91064BD54D54345EEE0AFD3F047934283006CCE38BF1EBABF60A3736DF3938D3</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>31CCEBE6ECBA806062ED987A410CB5A589264E7B998D9C365D43059F7E524A61</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>798073c2-ccee-48ff-b064-975ea29027a2_1.0.0.0_neutral__79djab9jn1ad0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>798073c2-ccee-48ff-b064-975ea29027a2_79djab9jn1ad0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>798073c2-ccee-48ff-b064-975ea29027a2</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-01-18T09:51:05.422</Modified>
+      <Modified>2015-01-18T18:21:48.543</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.exe">
       <PackagePath>GameBlock.Windows.exe</PackagePath>
-      <Modified>2015-01-18T13:43:26.229</Modified>
+      <Modified>2015-01-18T18:08:51.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -48,21 +48,25 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T09:55:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\erase.jpg">
+      <PackagePath>img\erase.jpg</PackagePath>
+      <Modified>2015-01-18T17:51:05.202</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-01-18T09:51:03.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-01-18T13:43:26.064</Modified>
+      <Modified>2015-01-18T18:06:37.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.xr.xml">
       <PackagePath>GameBlock.Windows.xr.xml</PackagePath>
-      <Modified>2015-01-18T13:43:26.047</Modified>
+      <Modified>2015-01-18T18:02:15.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-01-18T09:51:04.664</Modified>
+      <Modified>2015-01-18T18:21:48.333</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

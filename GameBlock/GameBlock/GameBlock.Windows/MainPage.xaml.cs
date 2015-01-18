@@ -14,12 +14,12 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace GameBlock
 {
     public sealed partial class MainPage : Page
     {
+        private int numbers = 10;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -34,8 +34,15 @@ namespace GameBlock
             set { SetValue(CurrentValueProperty, value); }
         }
 
-        private void animate(Storyboard story, TimeSpan ts)
+        private void setControlView(Storyboard story, TimeSpan ts, string addNumber)
         {
+            if(!String.IsNullOrEmpty(addNumber))
+            {
+                if (numbers <= 0)
+                    Numbers = Numbers.Remove(0, 1);
+                Numbers += addNumber;
+                numbers -= 1;
+            }
             story.RepeatBehavior = new RepeatBehavior(ts);
             story.Begin();
         }
@@ -43,81 +50,74 @@ namespace GameBlock
         #region Event Handler
         private void r1_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s1, new TimeSpan(0, 0, 2));
+             setControlView(s1, new TimeSpan(0, 0, 2), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r2_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s2, new TimeSpan(0, 0, 4));
+            setControlView(s2, new TimeSpan(0, 0, 4),((sender as Button).Content as TextBlock).Text);
         }
 
         private void r3_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s3, new TimeSpan(0, 0, 3));
+            setControlView(s3, new TimeSpan(0, 0, 3),((sender as Button).Content as TextBlock).Text);
         }
 
         private void r4_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s4, new TimeSpan(0, 0, 5));
+            setControlView(s4, new TimeSpan(0, 0, 5), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r5_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s5, new TimeSpan(0, 0, 4));
+            setControlView(s5, new TimeSpan(0, 0, 4), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r6_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s6, new TimeSpan(0, 0, 1));
+            setControlView(s6, new TimeSpan(0, 0, 1), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r7_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s7, new TimeSpan(0, 0, 1));
+            setControlView(s7, new TimeSpan(0, 0, 1), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r8_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s8, new TimeSpan(0, 0, 2));
+            setControlView(s8, new TimeSpan(0, 0, 2), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r9_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s9, new TimeSpan(0, 0, 2));
+            setControlView(s9, new TimeSpan(0, 0, 2), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void r0_Click(object sender, RoutedEventArgs e)
         {
-            Numbers += ((sender as Button).Content as TextBlock).Text;
-            animate(s01, new TimeSpan(0, 0, 1));
+           setControlView(s01, new TimeSpan(0, 0, 1), ((sender as Button).Content as TextBlock).Text);
         }
 
         private void s01_Completed(object sender, object e)
         {
-            animate(s02, new TimeSpan(0, 0, 1));
+            setControlView(s02, new TimeSpan(0, 0, 1),null);
         }
 
         private void s02_Completed(object sender, object e)
         {
-            animate(s03, new TimeSpan(0, 0, 1));
+            setControlView(s03, new TimeSpan(0, 0, 1), null);
         }
 
         private void s03_Completed(object sender, object e)
         {
-            animate(s04, new TimeSpan(0, 0, 1));
+            setControlView(s04, new TimeSpan(0, 0, 1), null);
+        }
+
+        private void erase_Click(object sender, RoutedEventArgs e)
+        {
+            Numbers = "";
+            numbers = 10;
         }
         #endregion
-
-
-
     }
 }

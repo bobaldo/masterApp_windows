@@ -54,18 +54,21 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-      
-
         <Canvas>
-            <TextBlock FontFamily="Verdana" FontSize="50" HorizontalAlignment="Right" FlowDirection="RightToLeft"
-                       Text="{Binding ElementName=mainPage, Path=Numbers}"
-                VerticalAlignment="Bottom" Canvas.Left="600" Canvas.Top="100" Foreground="White" Width="700" Height="100">
-            </TextBlock>
+            <Border Background="White" Canvas.Left="600" Canvas.Top="100">
+                <TextBlock FontFamily="Verdana" HorizontalAlignment="Right" FlowDirection="RightToLeft"
+                           Text="{Binding ElementName=mainPage, Path=Numbers}"
+                           FontSize="{Binding ElementName=slider, Path=Value}"
+                    VerticalAlignment="Bottom"  Foreground="Black" Width="700" Height="110">
+                </TextBlock>
+            </Border>
 
+            <Slider Canvas.Left="600" Canvas.Top="256" Width="700" x:Name="slider" Minimum="10" Maximum="100" Value="50" />
+            
             <Button x:Name="r1" Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100" Click="r1_Click">
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">1</TextBlock>
             </Button>
-
+            
             <Button x:Name="r2" BorderBrush="Red" Height="100" Width="100" Canvas.Left="250" Canvas.Top="100" Click="r2_Click">
                 <Button.Background>
                     <SolidColorBrush x:Name="r2Back" Color="Red" ></SolidColorBrush>
@@ -108,6 +111,13 @@
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">0</TextBlock>
             </Button>
 
+            <Button x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27" Click="erase_Click">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="/img/erase.jpg"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </Canvas>
     </Grid>
 </Page>

@@ -35,6 +35,9 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\erase.jpg">
+      <PackagePath>img\erase.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
