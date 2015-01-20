@@ -59,6 +59,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Content" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Template" />
       <RootEvent Name="Click" />
@@ -80,6 +81,10 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
