@@ -21,9 +21,8 @@
             <DoubleAnimation Storyboard.TargetName="r4" Storyboard.TargetProperty="(Canvas.Top)" From="250" To="600" AutoReverse="False" Duration="0:0:5"/>
         </Storyboard>
         <Storyboard x:Name="s5" AutoReverse="True">
-            <!--<ColorAnimation Storyboard.TargetName="r5Back" Storyboard.TargetProperty="Color" From="Purple" To="Black" AutoReverse="False" Duration="0:0:4"/>-->
-            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="3.0" Duration="0:0:1" AutoReverse="False" />
-            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="3.0" Duration="0:0:1" AutoReverse="False" />
+            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="3.0" Duration="0:0:1" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="3.0" Duration="0:0:1" AutoReverse="True" />
         </Storyboard>
         <Storyboard x:Name="s6" AutoReverse="True">
             <DoubleAnimation Storyboard.TargetName="r6" Storyboard.TargetProperty="(Canvas.Left)" From="400" To="900" AutoReverse="False" Duration="0:0:1"/>
@@ -88,8 +87,7 @@
 
             <Button x:ConnectionId='8' BorderBrush="Purple" Height="100" Width="100" Canvas.Left="250" Canvas.Top="250"                 >
                 <Button.RenderTransform>
-                    <ScaleTransform x:Name="r5" 
-                        ScaleX="1" ScaleY="1"  />
+                    <ScaleTransform x:Name="r5" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">5</TextBlock>
             </Button>
