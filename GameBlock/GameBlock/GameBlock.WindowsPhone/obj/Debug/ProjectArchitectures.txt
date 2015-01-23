@@ -1,0 +1,1 @@
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\GameBlock.WindowsPhone.csproj;neutral

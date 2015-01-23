@@ -30,3 +30,7 @@ D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\qua
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\qualifiers.txt.intermediate
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\ProjectArchitectures.txt
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\TButton.g.i.cs
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\TButton.g.cs
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\TButton.xaml
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\TButton.xbf
