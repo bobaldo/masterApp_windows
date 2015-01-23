@@ -68,7 +68,7 @@
             <Button x:Name="r1" Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100" Click="r1_Click">
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">1</TextBlock>
             </Button>
-            
+
             <Button x:Name="r2" BorderBrush="Red" Height="100" Width="100" Canvas.Left="250" Canvas.Top="100" Click="r2_Click">
                 <Button.Background>
                     <SolidColorBrush x:Name="r2Back" Color="Red" ></SolidColorBrush>
@@ -118,6 +118,9 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            <Canvas x:Name="listImg" Height="450" Canvas.Left="600" Canvas.Top="307" Width="450">
+                
+            </Canvas>
         </Canvas>
     </Grid>
 </Page>
