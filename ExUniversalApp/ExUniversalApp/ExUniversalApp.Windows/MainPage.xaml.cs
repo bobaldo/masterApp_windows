@@ -90,6 +90,11 @@ namespace ExUniversalApp
                 }
             }
         }
+
+        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+
+        }
     }
 
     public class PositiveConverter : IValueConverter

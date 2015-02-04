@@ -8,48 +8,59 @@
     mc:Ignorable="d">
 
     <Page.Resources>
+        <!--<Style x:Key="MyStyle" TargetType="{x:Type Image}">
+            <Style.Triggers>
+                <Trigger Property="Visibility" Value="Visible">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard >
+                                <DoubleAnimation Storyboard.TargetName="r9" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>-->
+        
         <Storyboard x:Name="s1" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r1" Storyboard.TargetProperty="(Canvas.Top)" From="100" To="200" AutoReverse="false" Duration="0:0:2" />
-            <DoubleAnimation Storyboard.TargetName="r1" Storyboard.TargetProperty="(Canvas.Left)" From="100" To="200" AutoReverse="false" Duration="0:0:2" />
-        </Storyboard>
-        <Storyboard x:Name="s3" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r3" Storyboard.TargetProperty="(Canvas.Top)" From="100" To="50" AutoReverse="False" Duration="0:0:3"/>
-            <DoubleAnimation Storyboard.TargetName="r3" Storyboard.TargetProperty="(Canvas.Left)" From="400" To="450" AutoReverse="False" Duration="0:0:3"/>
-        </Storyboard>
-        <Storyboard x:Name="s4" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r4" Storyboard.TargetProperty="(Canvas.Top)" From="250" To="600" AutoReverse="False" Duration="0:0:5"/>
-        </Storyboard>
-        <Storyboard x:Name="s5" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="3.0" Duration="0:0:1" AutoReverse="True" />
-            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="3.0" Duration="0:0:1" AutoReverse="True" />
-        </Storyboard>
-        <Storyboard x:Name="s6" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r6" Storyboard.TargetProperty="(Canvas.Left)" From="400" To="900" AutoReverse="False" Duration="0:0:1"/>
-        </Storyboard>
-        <Storyboard x:Name="s7" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r7" Storyboard.TargetProperty="(Canvas.Left)" From="100" To="-100" AutoReverse="False" Duration="0:0:1"/>
-        </Storyboard>
-        <Storyboard x:Name="s8" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r8" Storyboard.TargetProperty="(Canvas.Top)" From="400" To="800" AutoReverse="False" Duration="0:0:2"/>
-        </Storyboard>
-        <Storyboard x:Name="s9" AutoReverse="True">
-            <DoubleAnimation Storyboard.TargetName="r9" Storyboard.TargetProperty="(Canvas.Top)" From="400" To="200" AutoReverse="False" Duration="0:0:2"/>
-            <DoubleAnimation Storyboard.TargetName="r9" Storyboard.TargetProperty="(Canvas.Left)" From="400" To="600" AutoReverse="False" Duration="0:0:2"/>
+            <DoubleAnimation Storyboard.TargetName="r1" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r1" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
         </Storyboard>
         <Storyboard x:Name="s2" AutoReverse="True">
-            <ColorAnimation Storyboard.TargetName="r2Back" Storyboard.TargetProperty="Color" From="Red" To="White" AutoReverse="False" Duration="0:0:4"/>
+            <DoubleAnimation Storyboard.TargetName="r2" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r2" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
         </Storyboard>
-        <Storyboard x:ConnectionId='1' x:Name="s01" AutoReverse="False"                          >
-            <DoubleAnimation Storyboard.TargetName="r0" Storyboard.TargetProperty="(Canvas.Left)" From="250" To="750" AutoReverse="False" Duration="0:0:1"/>
+        <Storyboard x:Name="s3" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r3" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r3" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
         </Storyboard>
-        <Storyboard x:ConnectionId='2' x:Name="s02" AutoReverse="False"                          >
-            <DoubleAnimation Storyboard.TargetName="r0" Storyboard.TargetProperty="(Canvas.Top)" From="550" To="300" AutoReverse="False" Duration="0:0:1"/>
+        <Storyboard x:Name="s4" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r4" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r4" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
         </Storyboard>
-        <Storyboard x:ConnectionId='3' x:Name="s03" AutoReverse="False"                          >
-            <DoubleAnimation Storyboard.TargetName="r0" Storyboard.TargetProperty="(Canvas.Left)" From="750" To="250" AutoReverse="False" Duration="0:0:1"/>
+        <Storyboard x:Name="s5" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r5" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
         </Storyboard>
-        <Storyboard x:Name="s04" AutoReverse="False">
-            <DoubleAnimation Storyboard.TargetName="r0" Storyboard.TargetProperty="(Canvas.Top)" From="300" To="550" AutoReverse="False" Duration="0:0:1"/>
+        <Storyboard x:Name="s6" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r6" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r6" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
+        </Storyboard>
+        <Storyboard x:Name="s7" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r7" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r7" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
+        </Storyboard>
+        <Storyboard x:Name="s8" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r8" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r8" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
+        </Storyboard>
+        <Storyboard x:Name="s9" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="r9" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r9" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
+        </Storyboard>
+        <Storyboard x:Name="s0" AutoReverse="False">
+            <DoubleAnimation Storyboard.TargetName="r0" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
+            <DoubleAnimation Storyboard.TargetName="r0" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
         </Storyboard>
     </Page.Resources>
 
@@ -64,61 +75,99 @@
             </Border>
 
             <Slider Canvas.Left="600" Canvas.Top="256" Width="700" x:Name="slider" Minimum="10" Maximum="100" Value="50" />
-            
-            <Button x:ConnectionId='4' x:Name="r1" Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100"                 >
+
+            <Button x:ConnectionId='1' Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r1" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">1</TextBlock>
             </Button>
-            
-            <Button x:ConnectionId='5' x:Name="r2" BorderBrush="Red" Height="100" Width="100" Canvas.Left="250" Canvas.Top="100"                 >
-                <Button.Background>
-                    <SolidColorBrush x:Name="r2Back" Color="Red" ></SolidColorBrush>
-                </Button.Background>
+
+            <Button x:ConnectionId='2' BorderBrush="Red" Height="100" Width="100" Canvas.Left="250" Canvas.Top="100"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r2" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">2</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='6' x:Name="r3" Background="Green" BorderBrush="Green" Height="100" Width="100" Canvas.Left="400" Canvas.Top="100"                 >
+            <Button x:ConnectionId='3' Background="Green" BorderBrush="Green" Height="100" Width="100" Canvas.Left="400" Canvas.Top="100"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r3" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">3</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='7' x:Name="r4" Background="Orange" BorderBrush="Orange" Height="100" Width="100" Canvas.Left="100" Canvas.Top="250"                 >
+            <Button x:ConnectionId='4' Background="Orange" BorderBrush="Orange" Height="100" Width="100" Canvas.Left="100" Canvas.Top="250"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r4" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">4</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='8' BorderBrush="Purple" Height="100" Width="100" Canvas.Left="250" Canvas.Top="250"                 >
+            <Button x:ConnectionId='5' BorderBrush="Purple" Height="100" Width="100" Canvas.Left="250" Canvas.Top="250"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r5" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">5</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='9' x:Name="r6" Background="Yellow" BorderBrush="Yellow" Height="100" Width="100" Canvas.Left="400" Canvas.Top="250"                 >
+            <Button x:ConnectionId='6' Background="Yellow" BorderBrush="Yellow" Height="100" Width="100" Canvas.Left="400" Canvas.Top="250"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r6" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">6</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='10' x:Name="r7" Background="Aquamarine" BorderBrush="Aquamarine" Height="100" Width="100" Canvas.Left="100" Canvas.Top="400"                 >
+            <Button x:ConnectionId='7' Background="Aquamarine" BorderBrush="Aquamarine" Height="100" Width="100" Canvas.Left="100" Canvas.Top="400"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r7" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">7</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='11' x:Name="r8" Background="IndianRed" BorderBrush="IndianRed" Height="100" Width="100" Canvas.Left="250" Canvas.Top="400"                 >
+            <Button x:ConnectionId='8' Background="IndianRed" BorderBrush="IndianRed" Height="100" Width="100" Canvas.Left="250" Canvas.Top="400"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r8" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">8</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='12' x:Name="r9" Background="PaleVioletRed" BorderBrush="PaleVioletRed" Height="100" Width="100" Canvas.Left="400" Canvas.Top="400"                 >
+            <Button x:ConnectionId='9' Background="PaleVioletRed" BorderBrush="PaleVioletRed" Height="100" Width="100" Canvas.Left="400" Canvas.Top="400"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r9" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">9</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='13' x:Name="r0" Background="WhiteSmoke" Foreground="Black" BorderBrush="WhiteSmoke" Height="100" Width="100" Canvas.Left="250" Canvas.Top="550"                 >
+            <Button x:ConnectionId='10' Background="WhiteSmoke" Foreground="Black" BorderBrush="WhiteSmoke" Height="100" Width="100" Canvas.Left="250" Canvas.Top="550"                        >
+                <Button.RenderTransform>
+                    <ScaleTransform x:Name="r0" ScaleX="1" ScaleY="1"  />
+                </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">0</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='14' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
+            <Button x:ConnectionId='11' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/img/erase.jpg"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            <Canvas x:Name="listImg" Height="450" Canvas.Left="600" Canvas.Top="307" Width="450">
+                <Image x:Name="i1" Visibility="Collapsed" Source="/img/numbers.png"/>
+                <Image x:Name="i2" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150"/>
+                <Image x:Name="i3" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300" Canvas.Top="286"/>
+                <Image x:Name="i4" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150" Canvas.Top="286"/>
+                <Image x:Name="i5" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300" Canvas.Top="143"/>
+                <Image x:Name="i6" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150" Canvas.Top="143"/>
+                <Image x:Name="i7" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="286"/>
+                <Image x:Name="i8" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="143"/>
+                <Image x:Name="i9" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300"/>
+                
+            </Canvas>
+            
         </Canvas>
+        
     </Grid>
 </Page>
 

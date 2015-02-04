@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.exe">
       <PackagePath>ExUniversalApp.Windows.exe</PackagePath>
-      <Modified>2015-02-04T11:45:18.088</Modified>
+      <Modified>2015-02-04T15:15:11.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -54,11 +54,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-02-04T11:45:17.921</Modified>
+      <Modified>2015-02-04T15:15:11.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.xr.xml">
       <PackagePath>ExUniversalApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-02-04T11:39:53.404</Modified>
+      <Modified>2015-02-04T15:15:11.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

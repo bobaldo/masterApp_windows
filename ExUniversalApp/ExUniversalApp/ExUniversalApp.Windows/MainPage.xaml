@@ -31,10 +31,9 @@
         </Storyboard>
     </Page.Resources>
 
-    <!-- the ShowGridLines property is debug only so you can see the gridlines -->
     <Grid Width="1000" Height="500"
-          KeyUp="Grid_KeyUp"
-          >
+          KeyDown="Grid_KeyDown"
+          KeyUp="Grid_KeyUp">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500" />
             <ColumnDefinition Width="500" />
@@ -55,15 +54,14 @@
                     </EventTrigger.Actions>
                 </EventTrigger>
             </Canvas.Triggers>
-
-
             <TextBlock Width="10" Height="10" Canvas.Top="250" x:Name="txtCursor" Text="X">
                 <TextBlock.RenderTransform>
                     <RotateTransform x:Name="txtCursorRotate" Angle="0" CenterX="5" CenterY="5" />
                 </TextBlock.RenderTransform>
             </TextBlock>
-            <Rectangle x:Name="txtBarrier" Canvas.Left="250" Canvas.Top="{Binding ElementName=RootPage, Path=TopBarriera}" 
-                       Width="10" Height="{Binding ElementName=RootPage, Path=HeigthBarriera}" Fill="White"/>
+            <Rectangle x:Name="txtBarrier" Canvas.Left="250" Width="10" Fill="White"
+                       Canvas.Top="{Binding ElementName=RootPage, Path=TopBarriera}" 
+                       Height="{Binding ElementName=RootPage, Path=HeigthBarriera}" />
         </Canvas>
         <Canvas Grid.Row="0" Grid.Column="1" Background="White">
             <Slider x:Name="txtVelocita" Minimum="0.01" Maximum="1" Value="0.5" Width="400" />
