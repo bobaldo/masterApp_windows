@@ -1,0 +1,76 @@
+﻿<Page
+    x:Name="RootPage"
+    x:Class="ExUniversalApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExUniversalApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource SymbolThemeFontFamily}"
+    FontSize="{StaticResource SliderTrackThemeHeight}"
+    Background="{StaticResource ButtonBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:PositiveConverter x:Key="PC"></local:PositiveConverter>
+        <Storyboard x:Name="ss1" Completed="ss1_Completed">
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Left)" To="230" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Top)" To="0" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+        </Storyboard>
+        <Storyboard x:Name="ss2" Completed="ss2_Completed">
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Left)" To="500" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Top)" To="230" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+        </Storyboard>
+        <Storyboard x:Name="ss3" Completed="ss3_Completed">
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Left)" To="230" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Top)" To="500" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+        </Storyboard>
+        <Storyboard x:Name="ss4" Completed="ss4_Completed">
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Left)" To="0" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+            <DoubleAnimation Storyboard.TargetName="txtCursor" Storyboard.TargetProperty="(Canvas.Top)" To="230" SpeedRatio="{Binding ElementName=txtVelocita, Path=Value}" />
+        </Storyboard>
+    </Page.Resources>
+
+    <!-- the ShowGridLines property is debug only so you can see the gridlines -->
+    <Grid Width="1000" Height="500"
+          KeyUp="Grid_KeyUp"
+          >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="500" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500" />
+        </Grid.RowDefinitions>
+
+        <Canvas x:Name="playGround" Grid.Row="0" Grid.Column="0"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="Canvas.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard x:Name="bs1">
+                            <Storyboard x:Name="s1">
+                                <DoubleAnimation Storyboard.TargetName="txtCursorRotate" Storyboard.TargetProperty="Angle" To="360" RepeatBehavior="ForEver" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Canvas.Triggers>
+
+
+            <TextBlock Width="10" Height="10" Canvas.Top="250" x:Name="txtCursor" Text="X">
+                <TextBlock.RenderTransform>
+                    <RotateTransform x:Name="txtCursorRotate" Angle="0" CenterX="5" CenterY="5" />
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Rectangle x:Name="txtBarrier" Canvas.Left="250" Canvas.Top="{Binding ElementName=RootPage, Path=TopBarriera}" 
+                       Width="10" Height="{Binding ElementName=RootPage, Path=HeigthBarriera}" Fill="White"/>
+        </Canvas>
+        <Canvas Grid.Row="0" Grid.Column="1" Background="White">
+            <Slider x:Name="txtVelocita" Minimum="0.01" Maximum="1" Value="0.5" Width="400" />
+            <Button Canvas.Top="50" Foreground="Black" Content="Inizia" x:Name="btnInizia" Click="btnInizia_Click"/>
+            <Border Background="Red" Canvas.Top="244" Width="94" Height="45" Canvas.Left="27">
+                <TextBlock x:Name="txtLog" Text="log"  />
+            </Border>
+        </Canvas>
+    </Grid>
+</Page>

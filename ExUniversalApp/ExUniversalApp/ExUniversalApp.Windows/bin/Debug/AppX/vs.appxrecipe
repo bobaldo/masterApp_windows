@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BOBALDO-PC</Machine>
+    <WindowsUser>Bobaldo</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>5fd565cd-808d-4c18-bba2-4f7fc39c252f</PackageIdentityName>
+    <IntermediateOutputPath>D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>4D05BC2B85E37B2A98A50AEDBC7B1AFE0D4A75E2F31AABA09957E1287771E69B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>5fd565cd-808d-4c18-bba2-4f7fc39c252f_1.0.0.0_neutral__79djab9jn1ad0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>5fd565cd-808d-4c18-bba2-4f7fc39c252f_79djab9jn1ad0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>5fd565cd-808d-4c18-bba2-4f7fc39c252f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Bobaldo</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-02T10:33:43.808</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.exe">
+      <PackagePath>ExUniversalApp.Windows.exe</PackagePath>
+      <Modified>2015-02-04T11:45:18.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-01-31T09:10:02.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-02-04T11:45:17.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.xr.xml">
+      <PackagePath>ExUniversalApp.Windows.xr.xml</PackagePath>
+      <Modified>2015-02-04T11:39:53.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-02-02T10:33:43.153</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
