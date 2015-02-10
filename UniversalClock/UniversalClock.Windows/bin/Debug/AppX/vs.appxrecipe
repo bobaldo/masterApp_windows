@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BOBALDO-PC</Machine>
+    <WindowsUser>Bobaldo</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>493d55d2-e612-41f8-851d-737dbf2e5e60</PackageIdentityName>
+    <IntermediateOutputPath>D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>818CCBB1FD2E35E90BAC0C787870E3944206A46EFAE3EA5498AFD325C14D3F04</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>493d55d2-e612-41f8-851d-737dbf2e5e60_1.0.0.0_neutral__h262gzk1sxjhr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>493d55d2-e612-41f8-851d-737dbf2e5e60_h262gzk1sxjhr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>493d55d2-e612-41f8-851d-737dbf2e5e60</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Matteo Vigoni</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-10T11:37:21.233</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\UniversalClock.Windows.exe">
+      <PackagePath>UniversalClock.Windows.exe</PackagePath>
+      <Modified>2015-02-10T17:13:16.079</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T10:48:56.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T10:48:56.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T10:48:56.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T10:48:56.597</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-02-10T11:37:20.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\ClockControl.xbf">
+      <PackagePath>ClockControl.xbf</PackagePath>
+      <Modified>2015-02-10T16:15:52.977</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-02-10T16:15:52.977</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\UniversalClock.Windows.xr.xml">
+      <PackagePath>UniversalClock.Windows.xr.xml</PackagePath>
+      <Modified>2015-02-10T15:51:16.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\UniversalClock\UniversalClock.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-02-10T11:37:21.092</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
