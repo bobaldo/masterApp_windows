@@ -14,7 +14,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="UniversalClock.ClockControl" />
+    <RootType FullName="UniversalClock.ClockControl">
+      <RootProperty Name="Title" />
+    </RootType>
     <RootType FullName="UniversalClock.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Width" />
@@ -22,6 +24,9 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.BeginStoryboard">
+      <RootProperty Name="Storyboard" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
       <RootProperty Name="AutoReverse" />
@@ -35,6 +40,9 @@
       <RootProperty Name="To" />
       <RootProperty Name="Duration" />
       <RootProperty Name="AutoReverse" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Child" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="Width" />
@@ -62,6 +70,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">

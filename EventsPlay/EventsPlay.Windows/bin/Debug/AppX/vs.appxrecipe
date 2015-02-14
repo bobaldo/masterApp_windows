@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BOBALDO-PC</Machine>
+    <WindowsUser>Bobaldo</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>60db184f-4d73-419c-9779-d7d68a6b2397</PackageIdentityName>
+    <IntermediateOutputPath>D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>741CFB74A9CD73F4E82BBF307EB12BD60E578F02E52ABA40E61415D1617DED20</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>60db184f-4d73-419c-9779-d7d68a6b2397_1.0.0.0_neutral__79djab9jn1ad0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>60db184f-4d73-419c-9779-d7d68a6b2397_79djab9jn1ad0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>60db184f-4d73-419c-9779-d7d68a6b2397</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Bobaldo</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-14T11:10:59.586</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\EventsPlay.Windows.exe">
+      <PackagePath>EventsPlay.Windows.exe</PackagePath>
+      <Modified>2015-02-14T11:18:52.430</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-02-14T11:10:58.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\PlayWithEvents.xbf">
+      <PackagePath>PlayWithEvents.xbf</PackagePath>
+      <Modified>2015-02-14T11:16:21.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-02-14T11:18:52.269</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\EventsPlay.Windows.xr.xml">
+      <PackagePath>EventsPlay.Windows.xr.xml</PackagePath>
+      <Modified>2015-02-14T11:16:21.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EventsPlay\EventsPlay.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-02-14T11:10:59.198</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

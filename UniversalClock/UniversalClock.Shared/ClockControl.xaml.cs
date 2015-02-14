@@ -21,7 +21,7 @@ namespace UniversalClock
     public sealed partial class ClockControl : UserControl
     {
         public static DependencyProperty AnalogClockEnabledProperty = DependencyProperty.Register("AnalogClockEnabled", typeof(bool), typeof(ClockControl), new PropertyMetadata(true));
-        public static DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(ClockControl), new PropertyMetadata("Clock"));
+        public static DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(ClockControl), new PropertyMetadata(""));
         public static DependencyProperty TimeProperty = DependencyProperty.Register("Time", typeof(DateTime), typeof(ClockControl), new PropertyMetadata(DateTime.Now));
 
         public bool AnalogClockEnabled
@@ -32,7 +32,7 @@ namespace UniversalClock
 
         public string Title
         {
-            get { return (string)GetValue(TitleProperty); }
+            get { return (string)GetValue(TitleProperty); } 
             set { SetValue(TitleProperty, value); }
         }
 
@@ -62,7 +62,6 @@ namespace UniversalClock
             rtSeconds.Angle = Time.Second * 6;
             rtMinutes.Angle = Time.Minute * 6;
             rtHours.Angle = Time.Hour * 6 * 5;
-            Title = Time.ToString("hh:mm tt");
         }
     }
 }

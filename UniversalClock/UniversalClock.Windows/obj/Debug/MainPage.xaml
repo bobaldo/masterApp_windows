@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <local:ClockControl></local:ClockControl>
+        <local:ClockControl Title="Roma"></local:ClockControl>
     </StackPanel>
 </Page>
 

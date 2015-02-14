@@ -10,44 +10,50 @@
     x:Name="control"
     Foreground="White"
     Background="Black">
+
     
     <UserControl.Resources>
-        <Storyboard x:Name="sClockAnimation" x:Key="ClockAnimation" AutoReverse="False">
-            <DoubleAnimation x:Name="daSecondsAnimation" To="0" Duration="00:00:01.0" Storyboard.TargetName="rtSeconds" Storyboard.TargetProperty="Angle" AutoReverse="False"/>
-        </Storyboard>
+        <BeginStoryboard x:Key="initStory">
+            <Storyboard x:Name="sClockAnimation" AutoReverse="False">
+                <DoubleAnimation x:Name="daSecondsAnimation" To="360" Duration="00:00:01" Storyboard.TargetName="rtSeconds" Storyboard.TargetProperty="Angle" AutoReverse="False"/>
+                <DoubleAnimation x:Name="daMinutesAnimation" To="360" Duration="00:00:02" Storyboard.TargetName="rtMinutes" Storyboard.TargetProperty="Angle" AutoReverse="False"/>
+                <DoubleAnimation x:Name="daHoursAnimation" To="360" Duration="00:00:03" Storyboard.TargetName="rtHours" Storyboard.TargetProperty="Angle" AutoReverse="False"/>
+            </Storyboard>
+        </BeginStoryboard>
     </UserControl.Resources>
+    <Viewbox>
+        <Canvas x:ConnectionId='1' Width="300" Height="300"                       >
 
-    <Canvas x:ConnectionId='1' Width="300" Height="300"                       >
+            <Canvas.RenderTransform>
+                <TranslateTransform X="150" Y="150" />
+            </Canvas.RenderTransform>
 
-        <Canvas.RenderTransform>
-            <TranslateTransform X="150" Y="150" />
-        </Canvas.RenderTransform>
+            <Path Data="M 0 10 L 0 -150" Stroke="{Binding ElementName=control, Path=Foreground}" StrokeThickness="1">
+                <Path.RenderTransform>
+                    <RotateTransform x:Name="rtSeconds" Angle="90" />
+                </Path.RenderTransform>
+            </Path>
 
-        <Path x:Name="sec" Data="M 0 10 L 0 -150" Stroke="{Binding ElementName=control, Path=Foreground}" StrokeThickness="1">
-            <Path.RenderTransform>
-                <RotateTransform x:Name="rtSeconds" Angle="90" />
-            </Path.RenderTransform>
-        </Path>
+            <Path Data="M 0 10 L 0 -120" StrokeThickness="6" Stroke="{Binding ElementName=control, Path=Foreground}">
+                <Path.RenderTransform>
+                    <RotateTransform x:Name="rtMinutes" Angle="0" />
+                </Path.RenderTransform>
+            </Path>
 
-        <Path Data="M 0 10 L 0 -120" StrokeThickness="6" Stroke="{Binding ElementName=control, Path=Foreground}">
-            <Path.RenderTransform>
-                <RotateTransform x:Name="rtMinutes" Angle="0" />
-            </Path.RenderTransform>
-        </Path>
+            <Path Data="M 0 10 L 0 -75" StrokeThickness="6" Stroke="{Binding ElementName=control, Path=Foreground}">
+                <Path.RenderTransform>
+                    <RotateTransform x:Name="rtHours" Angle="45" />
+                </Path.RenderTransform>
+            </Path>
 
-        <Path Data="M 0 10 L 0 -75" StrokeThickness="6" Stroke="{Binding ElementName=control, Path=Foreground}">
-            <Path.RenderTransform>
-                <RotateTransform x:Name="rtHours" Angle="45" />
-            </Path.RenderTransform>
-        </Path>
-
-        <TextBlock Height="50" Width="300" 
+            <TextBlock Height="50" Width="300" 
                    Text="{Binding ElementName=control, Path=Title}" 
                    TextAlignment="Center"
+                   FontSize="24"
                    Foreground="{Binding ElementName=control, Path=Foreground}" 
-                   Canvas.Left="-150" Canvas.Top="38"/>
+                   Canvas.Left="-150" Canvas.Top="200"/>
 
-    </Canvas>
-
+        </Canvas>
+    </Viewbox>
 </UserControl>
 
