@@ -21,12 +21,13 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
       <RootProperty Name="To" />
       <RootProperty Name="AutoReverse" />
+      <RootProperty Name="Duration" />
+      <RootProperty Name="EasingFunction" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.CircleEase" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="Children" />
       <RootProperty Name="Height" />
@@ -60,6 +61,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Visibility" />
       <RootProperty Name="Source" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+      <RootProperty Name="CenterX" />
+      <RootProperty Name="CenterY" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="Template" />

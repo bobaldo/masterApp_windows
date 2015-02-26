@@ -59,9 +59,17 @@ namespace GameBlock
                 if (FindName("i" + i) is Image)
                 {
                     if (i <= numberImgVisible)
+                    {
                         (FindName("i" + i) as Image).Visibility = Visibility.Visible;
+
+                        Storyboard sb = (FindName("animateImage" + i) as Storyboard);
+                        sb.Stop();
+                        sb.Begin();
+                    }
                     else
+                    {
                         (FindName("i" + i) as Image).Visibility = Visibility.Collapsed;
+                    }
                 }
             }
         }

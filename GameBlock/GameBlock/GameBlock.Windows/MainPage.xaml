@@ -22,6 +22,69 @@
             </Style.Triggers>
         </Style>-->
         
+        <Storyboard x:Name="animateImage1" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate1" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage2" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate2" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage3" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate3" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage4" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate4" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage5" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate5" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage6" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate6" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage7" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate7" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage8" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate8" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animateImage9" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="imageRotate9" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
         <Storyboard x:Name="s1" AutoReverse="True">
             <DoubleAnimation Storyboard.TargetName="r1" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
             <DoubleAnimation Storyboard.TargetName="r1" Storyboard.TargetProperty="(ScaleTransform.ScaleY)" To="1.2" AutoReverse="True" />
@@ -154,15 +217,51 @@
                 </Button.Template>
             </Button>
             <Canvas x:Name="listImg" Height="450" Canvas.Left="600" Canvas.Top="307" Width="450">
-                <Image x:Name="i1" Visibility="Collapsed" Source="/img/numbers.png"/>
-                <Image x:Name="i2" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150"/>
-                <Image x:Name="i3" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300" Canvas.Top="286"/>
-                <Image x:Name="i4" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150" Canvas.Top="286"/>
-                <Image x:Name="i5" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300" Canvas.Top="143"/>
-                <Image x:Name="i6" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150" Canvas.Top="143"/>
-                <Image x:Name="i7" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="286"/>
-                <Image x:Name="i8" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="143"/>
-                <Image x:Name="i9" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300"/>
+                <Image x:Name="i1" Visibility="Collapsed" Source="/img/numbers.png">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate1" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i2" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate2" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i3" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate3" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i4" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="150">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate4" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i5" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="150" Canvas.Top="150">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate5" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i6" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Left="300" Canvas.Top="150">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate6" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i7" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="300">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate7" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i8" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="300" Canvas.Left="150">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate8" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="i9" Visibility="Collapsed" Source="/img/numbers.png" Canvas.Top="300" Canvas.Left="300">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="imageRotate9" Angle="0" CenterX="75" CenterY="75"/>
+                    </Image.RenderTransform>
+                </Image>
                 
             </Canvas>
             
