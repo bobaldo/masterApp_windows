@@ -1,0 +1,1 @@
+D:\_gitHub\masterApp_windows\CollectionsProject\CollectionsProject\CollectionsProject.WindowsPhone\CollectionsProject.WindowsPhone.csproj;neutral
