@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.exe">
       <PackagePath>GameBlock.Windows.exe</PackagePath>
-      <Modified>2015-02-26T15:57:05.276</Modified>
+      <Modified>2015-03-03T13:51:26.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -66,11 +66,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-02-26T15:57:05.107</Modified>
+      <Modified>2015-03-03T13:51:25.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.xr.xml">
       <PackagePath>GameBlock.Windows.xr.xml</PackagePath>
-      <Modified>2015-02-26T15:57:05.038</Modified>
+      <Modified>2015-03-03T13:51:25.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

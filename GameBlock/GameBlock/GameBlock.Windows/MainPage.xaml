@@ -127,8 +127,8 @@
         </Storyboard>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas>
+    <Grid x:Name="gridContainer" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" KeyDown="gridContainer_KeyUp">
+        <Canvas  KeyUp="gridContainer_KeyUp">
             <Border Background="White" Canvas.Left="600" Canvas.Top="100">
                 <TextBlock FontFamily="Verdana" HorizontalAlignment="Right" FlowDirection="RightToLeft"
                            Text="{Binding ElementName=mainPage, Path=Numbers}"

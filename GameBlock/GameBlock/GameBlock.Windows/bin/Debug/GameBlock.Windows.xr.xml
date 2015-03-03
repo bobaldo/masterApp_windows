@@ -26,12 +26,16 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.CircleEase" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+      <RootEvent Name="KeyDown" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="Children" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootEvent Name="KeyUp" />
       <RootMethod Name="GetLeft" />
       <RootMethod Name="SetLeft" />
       <RootMethod Name="GetTop" />

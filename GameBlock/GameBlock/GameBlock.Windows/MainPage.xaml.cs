@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Imaging;
+using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -86,7 +87,57 @@ namespace GameBlock
         {
             setControlView(((sender as Button).Content as TextBlock).Text);
         }
-        #endregion
 
+        private void gridContainer_KeyUp(object sender, KeyRoutedEventArgs e)
+        {
+            //doppio evento da capire il perchè
+            var btnValuPressed = "";
+            switch (e.Key)
+            {
+                default:
+                case VirtualKey.NumberPad0:
+                case VirtualKey.Number0:
+                    btnValuPressed = "0";
+                    break;
+                case VirtualKey.NumberPad1:
+                case VirtualKey.Number1:
+                    btnValuPressed = "1";
+                    break;
+                case VirtualKey.NumberPad2:
+                case VirtualKey.Number2:
+                    btnValuPressed = "2";
+                    break;
+                case VirtualKey.NumberPad3:
+                case VirtualKey.Number3:
+                    btnValuPressed = "3";
+                    break;
+                case VirtualKey.NumberPad4:
+                case VirtualKey.Number4:
+                    btnValuPressed = "4";
+                    break;
+                case VirtualKey.NumberPad5:
+                case VirtualKey.Number5:
+                    btnValuPressed = "5";
+                    break;
+                case VirtualKey.NumberPad6:
+                case VirtualKey.Number6:
+                    btnValuPressed = "6";
+                    break;
+                case VirtualKey.NumberPad7:
+                case VirtualKey.Number7:
+                    btnValuPressed = "7";
+                    break;
+                case VirtualKey.NumberPad8:
+                case VirtualKey.Number8:
+                    btnValuPressed = "8";
+                    break;
+                case VirtualKey.NumberPad9:
+                case VirtualKey.Number9:
+                    btnValuPressed = "9";
+                    break;
+            }
+            setControlView(btnValuPressed);
+        }
+        #endregion
     }
 }

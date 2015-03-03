@@ -127,8 +127,8 @@
         </Storyboard>
     </Page.Resources>
 
-    <Grid >
-        <Canvas>
+    <Grid x:ConnectionId='1' x:Name="gridContainer" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"                              >
+        <Canvas x:ConnectionId='2'                             >
             <Border Background="White" Canvas.Left="600" Canvas.Top="100">
                 <TextBlock FontFamily="Verdana" HorizontalAlignment="Right" FlowDirection="RightToLeft"
                            Text="{Binding ElementName=mainPage, Path=Numbers}"
@@ -139,77 +139,77 @@
 
             <Slider Canvas.Left="600" Canvas.Top="256" Width="700" x:Name="slider" Minimum="10" Maximum="100" Value="50" />
 
-            <Button x:ConnectionId='1' Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100"                        >
+            <Button x:ConnectionId='3' Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r1" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">1</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='2' BorderBrush="Red" Height="100" Width="100" Canvas.Left="250" Canvas.Top="100"                        >
+            <Button x:ConnectionId='4' BorderBrush="Red" Height="100" Width="100" Canvas.Left="250" Canvas.Top="100"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r2" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">2</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='3' Background="Green" BorderBrush="Green" Height="100" Width="100" Canvas.Left="400" Canvas.Top="100"                        >
+            <Button x:ConnectionId='5' Background="Green" BorderBrush="Green" Height="100" Width="100" Canvas.Left="400" Canvas.Top="100"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r3" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">3</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='4' Background="Orange" BorderBrush="Orange" Height="100" Width="100" Canvas.Left="100" Canvas.Top="250"                        >
+            <Button x:ConnectionId='6' Background="Orange" BorderBrush="Orange" Height="100" Width="100" Canvas.Left="100" Canvas.Top="250"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r4" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">4</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='5' BorderBrush="Purple" Height="100" Width="100" Canvas.Left="250" Canvas.Top="250"                        >
+            <Button x:ConnectionId='7' BorderBrush="Purple" Height="100" Width="100" Canvas.Left="250" Canvas.Top="250"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r5" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">5</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='6' Background="Yellow" BorderBrush="Yellow" Height="100" Width="100" Canvas.Left="400" Canvas.Top="250"                        >
+            <Button x:ConnectionId='8' Background="Yellow" BorderBrush="Yellow" Height="100" Width="100" Canvas.Left="400" Canvas.Top="250"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r6" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">6</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='7' Background="Aquamarine" BorderBrush="Aquamarine" Height="100" Width="100" Canvas.Left="100" Canvas.Top="400"                        >
+            <Button x:ConnectionId='9' Background="Aquamarine" BorderBrush="Aquamarine" Height="100" Width="100" Canvas.Left="100" Canvas.Top="400"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r7" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">7</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='8' Background="IndianRed" BorderBrush="IndianRed" Height="100" Width="100" Canvas.Left="250" Canvas.Top="400"                        >
+            <Button x:ConnectionId='10' Background="IndianRed" BorderBrush="IndianRed" Height="100" Width="100" Canvas.Left="250" Canvas.Top="400"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r8" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">8</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='9' Background="PaleVioletRed" BorderBrush="PaleVioletRed" Height="100" Width="100" Canvas.Left="400" Canvas.Top="400"                        >
+            <Button x:ConnectionId='11' Background="PaleVioletRed" BorderBrush="PaleVioletRed" Height="100" Width="100" Canvas.Left="400" Canvas.Top="400"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r9" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">9</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='10' Background="WhiteSmoke" Foreground="Black" BorderBrush="WhiteSmoke" Height="100" Width="100" Canvas.Left="250" Canvas.Top="550"                        >
+            <Button x:ConnectionId='12' Background="WhiteSmoke" Foreground="Black" BorderBrush="WhiteSmoke" Height="100" Width="100" Canvas.Left="250" Canvas.Top="550"                        >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r0" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">0</TextBlock>
             </Button>
 
-            <Button x:ConnectionId='11' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
+            <Button x:ConnectionId='13' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/img/erase.jpg"/>
