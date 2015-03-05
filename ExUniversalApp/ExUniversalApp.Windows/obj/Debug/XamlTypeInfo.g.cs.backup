@@ -9,17 +9,17 @@
 
 
 
-namespace CollectionsProject
+namespace ExUniversalApp
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace CollectionsProject
         {
             if(_provider == null)
             {
-                _provider = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace CollectionsProject
     }
 }
 
-namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
+namespace ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -124,19 +124,21 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "CollectionsProject.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "CollectionsProject.LocalFolderNav";
-            _typeNameTable[4] = "String";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "ExUniversalApp.PositiveConverter";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "ExUniversalApp.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[5] = "Int32";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::CollectionsProject.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::CollectionsProject.LocalFolderNav);
-            _typeTable[4] = typeof(global::System.String);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::ExUniversalApp.PositiveConverter);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::ExUniversalApp.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[5] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -171,74 +173,94 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::CollectionsProject.MainPage(); }
-        private object Activate_3_LocalFolderNav() { return new global::CollectionsProject.LocalFolderNav(); }
+        private object Activate_0_PositiveConverter() { return new global::ExUniversalApp.PositiveConverter(); }
+        private object Activate_2_MainPage() { return new global::ExUniversalApp.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlUserType userType;
+            global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
             switch (typeIndex)
             {
 
-            case 0:   //  CollectionsProject.MainPage
-                userType = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  ExUniversalApp.PositiveConverter
+                userType = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_PositiveConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 1:   //  Object
+                xamlType = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  CollectionsProject.LocalFolderNav
-                userType = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_LocalFolderNav;
-                userType.AddMemberName("CurrentFolderFQN");
+            case 2:   //  ExUniversalApp.MainPage
+                userType = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_2_MainPage;
+                userType.AddMemberName("HeigthBarriera");
+                userType.AddMemberName("TopBarriera");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  String
-                xamlType = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 3:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Int32
+                xamlType = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
         }
 
 
-        private object get_0_LocalFolderNav_CurrentFolderFQN(object instance)
+        private object get_0_MainPage_HeigthBarriera(object instance)
         {
-            var that = (global::CollectionsProject.LocalFolderNav)instance;
-            return that.CurrentFolderFQN;
+            var that = (global::ExUniversalApp.MainPage)instance;
+            return that.HeigthBarriera;
         }
-        private void set_0_LocalFolderNav_CurrentFolderFQN(object instance, object Value)
+        private void set_0_MainPage_HeigthBarriera(object instance, object Value)
         {
-            var that = (global::CollectionsProject.LocalFolderNav)instance;
-            that.CurrentFolderFQN = (global::System.String)Value;
+            var that = (global::ExUniversalApp.MainPage)instance;
+            that.HeigthBarriera = (global::System.Int32)Value;
+        }
+        private object get_1_MainPage_TopBarriera(object instance)
+        {
+            var that = (global::ExUniversalApp.MainPage)instance;
+            return that.TopBarriera;
+        }
+        private void set_1_MainPage_TopBarriera(object instance, object Value)
+        {
+            var that = (global::ExUniversalApp.MainPage)instance;
+            that.TopBarriera = (global::System.Int32)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlMember xamlMember = null;
-            global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlUserType userType;
+            global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlMember xamlMember = null;
+            global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
-            case "CollectionsProject.LocalFolderNav.CurrentFolderFQN":
-                userType = (global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CollectionsProject.LocalFolderNav");
-                xamlMember = new global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlMember(this, "CurrentFolderFQN", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_LocalFolderNav_CurrentFolderFQN;
-                xamlMember.Setter = set_0_LocalFolderNav_CurrentFolderFQN;
+            case "ExUniversalApp.MainPage.HeigthBarriera":
+                userType = (global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExUniversalApp.MainPage");
+                xamlMember = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlMember(this, "HeigthBarriera", "Int32");
+                xamlMember.Getter = get_0_MainPage_HeigthBarriera;
+                xamlMember.Setter = set_0_MainPage_HeigthBarriera;
+                break;
+            case "ExUniversalApp.MainPage.TopBarriera":
+                userType = (global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExUniversalApp.MainPage");
+                xamlMember = new global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlMember(this, "TopBarriera", "Int32");
+                xamlMember.Getter = get_1_MainPage_TopBarriera;
+                xamlMember.Setter = set_1_MainPage_TopBarriera;
                 break;
             }
             return xamlMember;
@@ -296,9 +318,9 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlSystemBaseType
     {
-        global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -312,7 +334,7 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -505,7 +527,7 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -514,7 +536,7 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::CollectionsProject.CollectionsProject_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::ExUniversalApp.ExUniversalApp_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

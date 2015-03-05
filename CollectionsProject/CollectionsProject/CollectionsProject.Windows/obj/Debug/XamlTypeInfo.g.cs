@@ -567,3 +567,4 @@ namespace CollectionsProject.CollectionsProject_Windows_XamlTypeInfo
 }
 
 
+

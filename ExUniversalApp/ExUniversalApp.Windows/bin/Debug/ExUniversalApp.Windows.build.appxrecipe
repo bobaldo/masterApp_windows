@@ -7,44 +7,44 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>5fd565cd-808d-4c18-bba2-4f7fc39c252f</PackageIdentityName>
-    <IntermediateOutputPath>D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.exe">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.exe">
       <PackagePath>ExUniversalApp.Windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.xr.xml">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\ExUniversalApp.Windows.xr.xml">
       <PackagePath>ExUniversalApp.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\ExUniversalApp\ExUniversalApp.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

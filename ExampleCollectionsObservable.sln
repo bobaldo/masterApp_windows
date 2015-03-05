@@ -5,17 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CollectionsProject", "CollectionsProject", "{FA2D7C4F-77DC-43CB-B1EB-4B1D731A5CB5}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CollectionsProject.Shared", "CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.shproj", "{AC352FA2-C7AB-4100-9096-709E44F9F211}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CollectionsProject.Shared", "CollectionsProject\CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.shproj", "{AC352FA2-C7AB-4100-9096-709E44F9F211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsProject.Windows", "CollectionsProject\CollectionsProject.Windows\CollectionsProject.Windows.csproj", "{E47B210C-C6F3-4583-87EA-D8DC894AB6F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsProject.Windows", "CollectionsProject\CollectionsProject\CollectionsProject.Windows\CollectionsProject.Windows.csproj", "{E47B210C-C6F3-4583-87EA-D8DC894AB6F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsProject.WindowsPhone", "CollectionsProject\CollectionsProject.WindowsPhone\CollectionsProject.WindowsPhone.csproj", "{82DC3499-3DAD-437D-ADAA-899AE8DE63F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsProject.WindowsPhone", "CollectionsProject\CollectionsProject\CollectionsProject.WindowsPhone\CollectionsProject.WindowsPhone.csproj", "{82DC3499-3DAD-437D-ADAA-899AE8DE63F7}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.projitems*{e47b210c-c6f3-4583-87ea-d8dc894ab6f4}*SharedItemsImports = 4
-		CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.projitems*{ac352fa2-c7ab-4100-9096-709e44f9f211}*SharedItemsImports = 13
-		CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.projitems*{82dc3499-3dad-437d-adaa-899ae8de63f7}*SharedItemsImports = 4
+		CollectionsProject\CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.projitems*{e47b210c-c6f3-4583-87ea-d8dc894ab6f4}*SharedItemsImports = 4
+		CollectionsProject\CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.projitems*{ac352fa2-c7ab-4100-9096-709e44f9f211}*SharedItemsImports = 13
+		CollectionsProject\CollectionsProject\CollectionsProject.Shared\CollectionsProject.Shared.projitems*{82dc3499-3dad-437d-adaa-899ae8de63f7}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

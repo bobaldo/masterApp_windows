@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\CollectionsProject\CollectionsProject\CollectionsProject.Windows\bin\Debug\CollectionsProject.Windows.exe">
       <PackagePath>CollectionsProject.Windows.exe</PackagePath>
-      <Modified>2015-02-27T12:31:20.634</Modified>
+      <Modified>2015-03-05T08:47:08.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\CollectionsProject\CollectionsProject\CollectionsProject.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
