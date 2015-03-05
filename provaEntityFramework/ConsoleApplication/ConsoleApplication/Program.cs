@@ -16,6 +16,7 @@ namespace ConsoleApplication
             foreach (var item in selectVacancy())
             {
                 Console.WriteLine("codice: \t" + item.codice + "\t job title: \t" + item.job_title);
+
             }
 
             foreach (var item in selectLingua())
