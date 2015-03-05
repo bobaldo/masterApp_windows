@@ -11,6 +11,7 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
+            //aggiunto commento di prova
             //insertVacancy();
             insertVacancyAsync();
             foreach (var item in selectVacancy())
