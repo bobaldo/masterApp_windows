@@ -23,7 +23,22 @@ namespace ConsoleApplication
             {
                 Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
             }
+
+            foreach (var item in selectSettore())
+            {
+                Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
+            }
             Console.ReadLine();
+        }
+
+        private static List<tbl_settore> selectSettore()
+        {
+            List<tbl_settore> ret;
+            using (var ctx = new Modello())
+            {
+                ret = ctx.tbl_settore.ToList();
+            }
+            return ret;
         }
 
         private static List<tbl_lingua> selectLingua()
