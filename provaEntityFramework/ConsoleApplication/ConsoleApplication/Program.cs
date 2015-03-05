@@ -17,7 +17,22 @@ namespace ConsoleApplication
             {
                 Console.WriteLine("codice: \t" + item.codice + "\t job title: \t" + item.job_title);
             }
+
+            foreach (var item in selectLingua())
+            {
+                Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
+            }
             Console.ReadLine();
+        }
+
+        private static List<tbl_lingua> selectLingua()
+        {
+            List<tbl_lingua> ret;
+            using (var ctx = new Modello())
+            {
+                ret = ctx.tbl_lingua.ToList();
+            }
+            return ret;
         }
 
         private static List<tbl_vacancy> selectVacancy()

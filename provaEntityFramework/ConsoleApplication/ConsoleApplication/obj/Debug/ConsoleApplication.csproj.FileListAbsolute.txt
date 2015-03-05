@@ -11,3 +11,10 @@ D:\_gitHub\provaEntityFramework\ConsoleApplication\ConsoleApplication\obj\Debug\
 D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
 D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
 D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\EntityFramework.dll
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\EntityFramework.SqlServer.dll
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\EntityFramework.xml
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\bin\Debug\EntityFramework.SqlServer.xml
+D:\_gitHub\masterApp_windows\provaEntityFramework\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
