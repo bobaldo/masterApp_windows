@@ -1,0 +1,1 @@
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.WindowsPhone\EsempioSQLite.WindowsPhone.csproj;x86

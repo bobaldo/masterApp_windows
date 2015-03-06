@@ -50,7 +50,18 @@ namespace GameBlock
                     (FindName("s" + content) as Storyboard).Begin();
 
                 setImageVisibility(Int32.Parse(content));
+                playMp3(content);
             }
+        }
+
+        private void playMp3(string content)
+        {
+            //BackgroundAudioPlayer
+
+            //WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
+
+            //wplayer.URL = "My MP3 file.mp3";
+            //wplayer.Controls.Play();
         }
 
         private void setImageVisibility(int numberImgVisible)

@@ -1,0 +1,1 @@
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\EsempioSQLite.Windows.csproj;x86
