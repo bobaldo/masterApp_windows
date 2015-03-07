@@ -1,6 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\_github\masterapp_windows\esempiosqlite\esempiosqlite.windowsphone\obj\x86\debug\intermediatexaml\esempiosqlite.windowsphone.exe" HashGuid="f1ccfd98-ea02-ad67-9b1b-9b6f5d4afe53" />
+    <LocalAssembly PathName="d:\_github\masterapp_windows\esempiosqlite\esempiosqlite.windowsphone\obj\x86\debug\intermediatexaml\esempiosqlite.windowsphone.exe" HashGuid="1bd661e6-6289-295b-a6d1-e7d6db2ba96d" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="d:\_github\masterapp_windows\packages\mathnet.numerics.3.5.0\lib\portable-net45+netcore45+wpa81+wp8+monoandroid1+monotouch1\mathnet.numerics.dll" HashGuid="37a9b7b4-f450-9afe-3b14-9669c0ad2d76" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

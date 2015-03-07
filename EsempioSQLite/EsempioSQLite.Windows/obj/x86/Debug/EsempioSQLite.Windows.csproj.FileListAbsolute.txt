@@ -31,3 +31,14 @@ D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\q
 D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\qualifiers.txt.intermediate
 D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\ProjectArchitectures.txt
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\EsempioSQLite.Windows.csprojResolveAssemblyReference.cache
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\Counter.g.i.cs
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\Counter.g.cs
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\Counter.xbf
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\MathNet.Numerics.dll
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\MathNet.Numerics.xml
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\Counter.xaml
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\Counter.xbf
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\MathNet.Numerics\en\MathNet.Numerics.Properties.Resources.resw
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\MathNet.Numerics.pri
+D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\MathNet.Numerics\qualifiers.txt

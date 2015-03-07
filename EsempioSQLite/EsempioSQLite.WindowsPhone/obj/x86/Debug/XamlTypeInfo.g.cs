@@ -124,15 +124,17 @@ namespace EsempioSQLite.EsempioSQLite_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "EsempioSQLite.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "EsempioSQLite.Counter";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::EsempioSQLite.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::EsempioSQLite.Counter);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -168,6 +170,7 @@ namespace EsempioSQLite.EsempioSQLite_WindowsPhone_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::EsempioSQLite.MainPage(); }
+        private object Activate_3_Counter() { return new global::EsempioSQLite.Counter(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -192,6 +195,13 @@ namespace EsempioSQLite.EsempioSQLite_WindowsPhone_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::EsempioSQLite.EsempioSQLite_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  EsempioSQLite.Counter
+                userType = new global::EsempioSQLite.EsempioSQLite_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Counter;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

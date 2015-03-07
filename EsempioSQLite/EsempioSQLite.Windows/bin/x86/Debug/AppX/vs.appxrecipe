@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BOBALDO-PC</Machine>
+    <WindowsUser>Bobaldo</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>2e2db0b9-b2eb-4fc8-9450-8e7607cb8502</PackageIdentityName>
+    <IntermediateOutputPath>D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>2C971860BD0871D92171D062840B9A70AC3C404B7C196605C9042C303EAD9928</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>2e2db0b9-b2eb-4fc8-9450-8e7607cb8502_1.0.0.0_x86__79djab9jn1ad0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>2e2db0b9-b2eb-4fc8-9450-8e7607cb8502_79djab9jn1ad0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>2e2db0b9-b2eb-4fc8-9450-8e7607cb8502</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Bobaldo</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-07T09:38:18.696</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\EsempioSQLite.Windows.exe">
+      <PackagePath>EsempioSQLite.Windows.exe</PackagePath>
+      <Modified>2015-03-07T09:38:18.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\packages\MathNet.Numerics.3.5.0\lib\portable-net45+netcore45+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll">
+      <PackagePath>MathNet.Numerics.dll</PackagePath>
+      <Modified>2015-03-07T08:41:03.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.8.3\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2015-03-06T09:33:00.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T09:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-03-06T09:51:42.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\Counter.xbf">
+      <PackagePath>Counter.xbf</PackagePath>
+      <Modified>2015-03-07T09:36:21.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-03-06T09:51:42.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\EsempioSQLite.Windows.xr.xml">
+      <PackagePath>EsempioSQLite.Windows.xr.xml</PackagePath>
+      <Modified>2015-03-07T09:36:21.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.Windows\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-07T09:38:18.492</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

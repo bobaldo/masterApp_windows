@@ -9,6 +9,8 @@ using Windows.Devices.Sensors;
 
 namespace EsempioSQLite
 {
+
+
     [Table("Users")]
     public class Users
     {
@@ -36,6 +38,8 @@ namespace EsempioSQLite
 
         public async void TestDB()
         {
+            #region Sensors
+            /*
             var acc = Windows.Devices.Sensors.Accelerometer.GetDefault();
             acc.ReadingChanged += (o, e) =>
             {
@@ -83,7 +87,9 @@ namespace EsempioSQLite
 
             var b = Windows.Devices.WiFiDirect.WiFiDirectDevice.GetDeviceSelector();
             var wifi =Windows.Devices.WiFiDirect.WiFiDirectDevice.FromIdAsync(b);
-      
+             * */
+            #endregion
+
             var db = new SQLiteAsyncConnection("test db");
             await db.CreateTableAsync<Users>();
 
@@ -92,4 +98,4 @@ namespace EsempioSQLite
 
         }
     }
-}
+}   

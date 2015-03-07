@@ -19,6 +19,9 @@
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.WindowsPhone\bin\x86\Debug\EsempioSQLite.WindowsPhone.exe">
       <PackagePath>EsempioSQLite.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\packages\MathNet.Numerics.3.5.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll">
+      <PackagePath>MathNet.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.8.8.3\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
@@ -46,8 +49,14 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.WindowsPhone\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.WindowsPhone\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.WindowsPhone\bin\x86\Debug\Counter.xbf">
+      <PackagePath>Counter.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\EsempioSQLite\EsempioSQLite.WindowsPhone\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
