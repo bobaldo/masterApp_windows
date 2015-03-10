@@ -1,4 +1,5 @@
 ﻿<Page
+    xmlns:cam="clr-namespace:WebcamControl;assembly=WebcamControl"  
     x:Name="mainPage"
     x:Class="GameBlock.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -208,8 +209,12 @@
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">0</TextBlock>
             </Button>
-
-            <Button x:ConnectionId='13' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
+            
+            <CaptureElement Name="inputCamera" VerticalAlignment="Center" Height="50" Width="50" Canvas.Left="751" Canvas.Top="24"/>
+            <Button x:ConnectionId='13' x:Name="apri_camera" Content="avvia camera" Height="50" Canvas.Left="1000" Canvas.Top="27"                          />
+            <Button x:ConnectionId='14' x:Name="salva_camera" Visibility="Collapsed" Content="salva camera" Height="50" Canvas.Left="870" Canvas.Top="27"                           />
+            
+            <Button x:ConnectionId='15' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/img/erase.jpg"/>

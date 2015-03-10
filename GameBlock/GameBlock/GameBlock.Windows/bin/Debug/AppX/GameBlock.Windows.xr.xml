@@ -59,8 +59,15 @@
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="Content" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Template" />
       <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CaptureElement">
+      <RootProperty Name="Name" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Visibility" />

@@ -6,6 +6,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Imaging;
+using Windows.Media.Capture;
+using Windows.Media.MediaProperties;
 using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -148,6 +150,85 @@ namespace GameBlock
                     break;
             }
             setControlView(btnValuPressed);
+        }
+
+        //TODO: sistemare
+        CaptureElement capturePreview;
+        MediaCapture captureMgr;
+        ImageEncodingProperties imageProperties = ImageEncodingProperties.CreateJpeg();
+        WriteableBitmap wBitmap;
+
+        private async void apri_camera_Click(object sender, RoutedEventArgs e)
+        {
+            salva_camera.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            //this.capturePreview = inputCamera;
+            //this.captureMgr = new MediaCapture();
+
+            //MediaCaptureInitializationSettings settings = new Windows.Media.Capture.MediaCaptureInitializationSettings();
+            //settings.StreamingCaptureMode = StreamingCaptureMode.Video;
+            //await this.captureMgr.InitializeAsync(settings);
+            //this.capturePreview.Source = captureMgr;
+            //await this.captureMgr.StartPreviewAsync();
+
+            CameraCaptureUI cameraUI = new CameraCaptureUI();
+
+            cameraUI.PhotoSettings.AllowCropping = false;
+            cameraUI.PhotoSettings.MaxResolution = CameraCaptureUIMaxPhotoResolution.MediumXga;
+
+            Windows.Storage.StorageFile capturedMedia =
+                await cameraUI.CaptureFileAsync(CameraCaptureUIMode.Photo);
+
+            if (capturedMedia != null)
+            {
+                using (var streamCamera = await capturedMedia.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                {
+                    BitmapImage bitmapCamera = new BitmapImage();
+                    bitmapCamera.SetSource(streamCamera);
+                    // To display the image in a XAML image object, do this:
+                    // myImage.Source = bitmapCamera;
+
+                    // Convert the camera bitap to a WriteableBitmap object, 
+                    // which is often a more useful format.
+
+                    int width = bitmapCamera.PixelWidth;
+                    int height = bitmapCamera.PixelHeight;
+
+                    wBitmap = new WriteableBitmap(width, height);
+
+                    using (var stream = await capturedMedia.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                    {
+                        wBitmap.SetSource(stream);
+                    }
+                }
+            }
+        }
+
+        private async void salva_camera_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: salvare immagine
+        //captureMgr.get
+
+            // Create the File Picker control
+            Windows.Storage.Pickers.FileSavePicker picker = new Windows.Storage.Pickers.FileSavePicker();
+            picker.FileTypeChoices.Add("JPG File", new List<string>() { ".jpg" });
+            Windows.Storage.StorageFile file = await picker.PickSaveFileAsync();
+
+            if (file != null)
+            {
+                // If the file path and name is entered properly, and user has not tapped 'cancel'..
+
+                using (Windows.Storage.Streams.IRandomAccessStream stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite))
+                {
+                    // Encode the image into JPG format,reading for saving
+                    BitmapEncoder encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.JpegEncoderId, stream);
+                    Stream pixelStream = wBitmap.PixelBuffer.AsStream();
+                    byte[] pixels = new byte[pixelStream.Length];
+                    await pixelStream.ReadAsync(pixels, 0, pixels.Length);
+                    encoder.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Ignore, (uint)wBitmap.PixelWidth, (uint)wBitmap.PixelHeight, 96.0, 96.0, pixels);
+                    await encoder.FlushAsync();
+                }
+            }
+
         }
         #endregion
     }
