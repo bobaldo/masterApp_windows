@@ -18,10 +18,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)img\erase.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)img\numbers - Copy.png" />
     <Content Include="$(MSBuildThisFileDirectory)img\numbers.png" />
     <Content Include="$(MSBuildThisFileDirectory)img\numbers1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)img\Numbers\" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\0.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\1.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\2.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\3.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\4.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\5.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\6.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\7.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\8.wma" />
+    <Content Include="$(MSBuildThisFileDirectory)sounds\9.wma" />
   </ItemGroup>
 </Project>

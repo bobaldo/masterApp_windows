@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>798073c2-ccee-48ff-b064-975ea29027a2</PackageIdentityName>
     <IntermediateOutputPath>D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>5509220CB08A567297A1B107222F7B7EE9D95AB44FCC658BCA179723CB9280F7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>BDE750B5344FC9E21C0864B7DC20B17BBCC8872146F17414978CF1AAB525CB4F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>798073c2-ccee-48ff-b064-975ea29027a2_1.0.0.0_neutral__79djab9jn1ad0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>798073c2-ccee-48ff-b064-975ea29027a2_79djab9jn1ad0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>798073c2-ccee-48ff-b064-975ea29027a2</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-09T17:19:17.866</Modified>
+      <Modified>2015-03-12T11:51:47.081</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.exe">
       <PackagePath>GameBlock.Windows.exe</PackagePath>
-      <Modified>2015-03-10T07:21:05.613</Modified>
+      <Modified>2015-03-12T12:23:17.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -48,6 +48,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-01-18T19:40:02.554</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers - Copy.png">
+      <PackagePath>img\numbers - Copy.png</PackagePath>
+      <Modified>2015-02-26T15:14:43.768</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers.png">
       <PackagePath>img\numbers.png</PackagePath>
       <Modified>2015-02-26T15:14:43.768</Modified>
@@ -60,21 +64,61 @@
       <PackagePath>img\erase.jpg</PackagePath>
       <Modified>2015-01-18T17:51:05.202</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\0.wma">
+      <PackagePath>sounds\0.wma</PackagePath>
+      <Modified>2015-03-12T11:47:52.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\1.wma">
+      <PackagePath>sounds\1.wma</PackagePath>
+      <Modified>2015-03-12T11:48:04.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\2.wma">
+      <PackagePath>sounds\2.wma</PackagePath>
+      <Modified>2015-03-12T11:48:13.090</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\3.wma">
+      <PackagePath>sounds\3.wma</PackagePath>
+      <Modified>2015-03-12T11:48:23.223</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\4.wma">
+      <PackagePath>sounds\4.wma</PackagePath>
+      <Modified>2015-03-12T11:48:33.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\5.wma">
+      <PackagePath>sounds\5.wma</PackagePath>
+      <Modified>2015-03-12T11:48:45.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\6.wma">
+      <PackagePath>sounds\6.wma</PackagePath>
+      <Modified>2015-03-12T11:48:55.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\7.wma">
+      <PackagePath>sounds\7.wma</PackagePath>
+      <Modified>2015-03-12T11:49:04.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\8.wma">
+      <PackagePath>sounds\8.wma</PackagePath>
+      <Modified>2015-03-12T11:49:42.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\9.wma">
+      <PackagePath>sounds\9.wma</PackagePath>
+      <Modified>2015-03-12T11:49:49.999</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-01-18T09:51:03.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-03-09T18:18:33.901</Modified>
+      <Modified>2015-03-12T12:23:16.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.xr.xml">
       <PackagePath>GameBlock.Windows.xr.xml</PackagePath>
-      <Modified>2015-03-09T18:18:33.865</Modified>
+      <Modified>2015-03-12T12:23:16.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-09T17:19:17.164</Modified>
+      <Modified>2015-03-12T11:51:46.947</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

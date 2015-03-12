@@ -3,7 +3,7 @@
   <Identity Name="798073c2-ccee-48ff-b064-975ea29027a2" Publisher="CN=Bobaldo" Version="1.0.0.0" />
   <Properties>
     <DisplayName>GameBlock.Windows</DisplayName>
-    <PublisherDisplayName>Bobaldo</PublisherDisplayName>
+    <PublisherDisplayName>davidepatrizi.com</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GameBlock.Windows.App">
-      <m2:VisualElements DisplayName="Numeri" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="GameBlock.Windows" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="ImparaNumeri" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Impare Numeri è una semplice applicazione per impare le cifre" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
         <m2:InitialRotationPreference>
           <m2:Rotation Preference="landscape" />
@@ -26,5 +26,6 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
 </Package>

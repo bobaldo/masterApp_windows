@@ -43,6 +43,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers - Copy.png">
+      <PackagePath>img\numbers - Copy.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers.png">
       <PackagePath>img\numbers.png</PackagePath>
     </AppxPackagedFile>
@@ -52,8 +55,14 @@
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\erase.jpg">
       <PackagePath>img\erase.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\sounds\1.wma">
+      <PackagePath>sounds\1.wma</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\Sounds.xbf">
+      <PackagePath>Sounds.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

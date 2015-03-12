@@ -58,12 +58,8 @@ namespace GameBlock
 
         private void playMp3(string content)
         {
-            //BackgroundAudioPlayer
-
-            //WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
-
-            //wplayer.URL = "My MP3 file.mp3";
-            //wplayer.Controls.Play();
+            if (FindName("sound" + content) is MediaElement)
+                (FindName("sound" + content) as MediaElement).Play();
         }
 
         private void setImageVisibility(int numberImgVisible)
@@ -103,11 +99,10 @@ namespace GameBlock
 
         private void gridContainer_KeyUp(object sender, KeyRoutedEventArgs e)
         {
-            //doppio evento da capire il perchè
+            //TODO: doppio evento da capire il perchè
             var btnValuPressed = "";
             switch (e.Key)
             {
-                default:
                 case VirtualKey.NumberPad0:
                 case VirtualKey.Number0:
                     btnValuPressed = "0";
@@ -152,84 +147,53 @@ namespace GameBlock
             setControlView(btnValuPressed);
         }
 
-        //TODO: sistemare
-        CaptureElement capturePreview;
-        MediaCapture captureMgr;
-        ImageEncodingProperties imageProperties = ImageEncodingProperties.CreateJpeg();
-        WriteableBitmap wBitmap;
-
-        private async void apri_camera_Click(object sender, RoutedEventArgs e)
+        private void Button_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            salva_camera.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            //this.capturePreview = inputCamera;
-            //this.captureMgr = new MediaCapture();
-
-            //MediaCaptureInitializationSettings settings = new Windows.Media.Capture.MediaCaptureInitializationSettings();
-            //settings.StreamingCaptureMode = StreamingCaptureMode.Video;
-            //await this.captureMgr.InitializeAsync(settings);
-            //this.capturePreview.Source = captureMgr;
-            //await this.captureMgr.StartPreviewAsync();
-
-            CameraCaptureUI cameraUI = new CameraCaptureUI();
-
-            cameraUI.PhotoSettings.AllowCropping = false;
-            cameraUI.PhotoSettings.MaxResolution = CameraCaptureUIMaxPhotoResolution.MediumXga;
-
-            Windows.Storage.StorageFile capturedMedia =
-                await cameraUI.CaptureFileAsync(CameraCaptureUIMode.Photo);
-
-            if (capturedMedia != null)
-            {
-                using (var streamCamera = await capturedMedia.OpenAsync(Windows.Storage.FileAccessMode.Read))
-                {
-                    BitmapImage bitmapCamera = new BitmapImage();
-                    bitmapCamera.SetSource(streamCamera);
-                    // To display the image in a XAML image object, do this:
-                    // myImage.Source = bitmapCamera;
-
-                    // Convert the camera bitap to a WriteableBitmap object, 
-                    // which is often a more useful format.
-
-                    int width = bitmapCamera.PixelWidth;
-                    int height = bitmapCamera.PixelHeight;
-
-                    wBitmap = new WriteableBitmap(width, height);
-
-                    using (var stream = await capturedMedia.OpenAsync(Windows.Storage.FileAccessMode.Read))
-                    {
-                        wBitmap.SetSource(stream);
-                    }
-                }
-            }
+            if (sender is Button)
+                setControlView(((sender as Button).Content as TextBlock).Text);
         }
 
-        private async void salva_camera_Click(object sender, RoutedEventArgs e)
+        #region CAMERA
+        Windows.Media.Capture.MediaCapture captureManager;
+
+        async private void InitCamera_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: salvare immagine
-        //captureMgr.get
-
-            // Create the File Picker control
-            Windows.Storage.Pickers.FileSavePicker picker = new Windows.Storage.Pickers.FileSavePicker();
-            picker.FileTypeChoices.Add("JPG File", new List<string>() { ".jpg" });
-            Windows.Storage.StorageFile file = await picker.PickSaveFileAsync();
-
-            if (file != null)
-            {
-                // If the file path and name is entered properly, and user has not tapped 'cancel'..
-
-                using (Windows.Storage.Streams.IRandomAccessStream stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite))
-                {
-                    // Encode the image into JPG format,reading for saving
-                    BitmapEncoder encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.JpegEncoderId, stream);
-                    Stream pixelStream = wBitmap.PixelBuffer.AsStream();
-                    byte[] pixels = new byte[pixelStream.Length];
-                    await pixelStream.ReadAsync(pixels, 0, pixels.Length);
-                    encoder.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Ignore, (uint)wBitmap.PixelWidth, (uint)wBitmap.PixelHeight, 96.0, 96.0, pixels);
-                    await encoder.FlushAsync();
-                }
-            }
-
+            captureManager = new MediaCapture();
+            await captureManager.InitializeAsync();
         }
+
+        async private void StartCapturePreview_Click(object sender, RoutedEventArgs e)
+        {
+            capturePreview.Source = captureManager;
+            await captureManager.StartPreviewAsync();
+        }
+
+        async private void StopCapturePreview_Click(object sender, RoutedEventArgs e)
+        {
+            await captureManager.StopPreviewAsync();
+        }
+
+        async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
+        {
+            ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
+
+            // create storage file in local app storage
+            Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(
+                "numbers.png",
+                Windows.Storage.CreationCollisionOption.ReplaceExisting);
+
+            // take photo
+            await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
+
+            // Get photo as a BitmapImage
+            BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
+
+            // imagePreivew is a <Image> object defined in XAML
+            imagePreivew.Source = bmpImage;
+        }
+        #endregion
+
+        
         #endregion
     }
 }

@@ -1,4 +1,5 @@
 ﻿<Page
+    xmlns:local="using:GameBlock.Sounds"
     xmlns:cam="clr-namespace:WebcamControl;assembly=WebcamControl"  
     x:Name="mainPage"
     x:Class="GameBlock.MainPage"
@@ -9,19 +10,16 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <!--<Style x:Key="MyStyle" TargetType="{x:Type Image}">
-            <Style.Triggers>
-                <Trigger Property="Visibility" Value="Visible">
-                    <Trigger.EnterActions>
-                        <BeginStoryboard>
-                            <Storyboard >
-                                <DoubleAnimation Storyboard.TargetName="r9" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" To="1.2" AutoReverse="True" />
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </Trigger.EnterActions>
-                </Trigger>
-            </Style.Triggers>
-        </Style>-->
+        <MediaElement Source="/sounds/0.wma" x:Name="sound0" AutoPlay="False" />
+        <MediaElement Source="/sounds/1.wma" x:Name="sound1" AutoPlay="False" />
+        <MediaElement Source="/sounds/2.wma" x:Name="sound2" AutoPlay="False" />
+        <MediaElement Source="/sounds/3.wma" x:Name="sound3" AutoPlay="False" />
+        <MediaElement Source="/sounds/4.wma" x:Name="sound4" AutoPlay="False" />
+        <MediaElement Source="/sounds/5.wma" x:Name="sound5" AutoPlay="False" />
+        <MediaElement Source="/sounds/6.wma" x:Name="sound6" AutoPlay="False" />
+        <MediaElement Source="/sounds/7.wma" x:Name="sound7" AutoPlay="False" />
+        <MediaElement Source="/sounds/8.wma" x:Name="sound8" AutoPlay="False" />
+        <MediaElement Source="/sounds/9.wma" x:Name="sound9" AutoPlay="False" />
         
         <Storyboard x:Name="animateImage1" AutoReverse="True">
             <DoubleAnimation Storyboard.TargetName="imageRotate1" Storyboard.TargetProperty="Angle" Duration="0:0:0.5" To="10" AutoReverse="True">
@@ -140,7 +138,7 @@
 
             <Slider Canvas.Left="600" Canvas.Top="256" Width="700" x:Name="slider" Minimum="10" Maximum="100" Value="50" />
 
-            <Button x:ConnectionId='3' Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100"                        >
+            <Button x:ConnectionId='3' Background="Blue" BorderBrush="Blue" Height="100" Width="100" Canvas.Left="100" Canvas.Top="100"                                                               >
                 <Button.RenderTransform>
                     <ScaleTransform x:Name="r1" ScaleX="1" ScaleY="1"  />
                 </Button.RenderTransform>
@@ -209,18 +207,29 @@
                 </Button.RenderTransform>
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">0</TextBlock>
             </Button>
-            
-            <CaptureElement Name="inputCamera" VerticalAlignment="Center" Height="50" Width="50" Canvas.Left="751" Canvas.Top="24"/>
-            <Button x:ConnectionId='13' x:Name="apri_camera" Content="avvia camera" Height="50" Canvas.Left="1000" Canvas.Top="27"                          />
-            <Button x:ConnectionId='14' x:Name="salva_camera" Visibility="Collapsed" Content="salva camera" Height="50" Canvas.Left="870" Canvas.Top="27"                           />
-            
-            <Button x:ConnectionId='15' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
+
+            <StackPanel Orientation="Horizontal">
+                <CaptureElement x:Name="capturePreview" Width="320" Height="240" />
+                <Image x:Name="imagePreivew" Stretch="None" Width="320" Height="240" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button x:ConnectionId='14'                          Content="Initialize Camera" />
+                <Button x:ConnectionId='15'                                   Content="Start Capture Preview" />
+                <Button x:ConnectionId='16'                            Content="Capture Photo"/>
+                <Button x:ConnectionId='17'                                  Content="Stop Capture Preview" />
+            </StackPanel>
+
+            <Button x:ConnectionId='13' x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27"                    >
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/img/erase.jpg"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            
+                
+            
             <Canvas x:Name="listImg" Height="450" Canvas.Left="600" Canvas.Top="307" Width="450">
                 <Image x:Name="i1" Visibility="Collapsed" Source="/img/numbers.png">
                     <Image.RenderTransform>
