@@ -30,7 +30,7 @@ namespace GameBlock
         public PhotoPage()
         {
             this.InitializeComponent();
-
+            //TODO: fare in modo che quando venga caricata la pagina si avvii la camera
         }
 
         async private void Start_Click(object sender, RoutedEventArgs e)
@@ -52,28 +52,20 @@ namespace GameBlock
         {
             await captureManager.StopPreviewAsync();
             this.Frame.Navigate(typeof(MainPage));
-            //close this and return to mainPage
         }
 
         async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
         {
-            ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
-            imgFormat.Height = Constant.DimensionHeightImageSaved;
-            imgFormat.Width = Constant.DimensionWidthImageSaved;
-
-            // create storage file in local app storage
             Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(
                 Constant.NameImageSaved,
                 Windows.Storage.CreationCollisionOption.ReplaceExisting);
 
-            // take photo
+            ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
+            imgFormat.Height = Constant.DimensionHeightImageSaved;
+            imgFormat.Width = Constant.DimensionWidthImageSaved;
             await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
 
-            // Get photo as a BitmapImage
             BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
-
-            //TODO: cambiare tutte le immagini presenti da i1 a i9
-            //imagePreivew is a <Image> object defined in XAML
             imagePreivew.Source = bmpImage;
         }
     }
