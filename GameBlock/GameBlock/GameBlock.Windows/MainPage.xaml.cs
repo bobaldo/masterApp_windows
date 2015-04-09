@@ -180,6 +180,7 @@ namespace GameBlock
             this.Frame.Navigate(typeof(PhotoPage));
         }
 
+        //TODO: remove
         #region CAMERA
         //Windows.Media.Capture.MediaCapture captureManager;
 
