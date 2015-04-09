@@ -58,7 +58,8 @@ namespace GameBlock
         async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
         {
             ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
-            imgFormat.Height = imgFormat.Width = Constant.DimensionImageSaved;
+            imgFormat.Height = Constant.DimensionHeightImageSaved;
+            imgFormat.Width = Constant.DimensionWidthImageSaved;
 
             // create storage file in local app storage
             Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(

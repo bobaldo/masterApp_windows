@@ -7,6 +7,7 @@ namespace GameBlock
     public class Constant
     {
         public static string NameImageSaved = "photo.png";
-        public static uint DimensionImageSaved = 150;
+        public static uint DimensionHeightImageSaved = 150;
+        public static uint DimensionWidthImageSaved = 150;
     }
 }
