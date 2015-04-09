@@ -35,7 +35,8 @@ namespace ConsoleApplication
 
         public string introduzione { get; set; }
 
-        public string job_title { get; set; }
+        [Column("job_title")]
+        public string jobTitle { get; set; }
 
         public string duty_station { get; set; }
 

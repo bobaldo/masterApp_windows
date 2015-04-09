@@ -15,12 +15,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constant.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)img\erase.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)img\numbers - Copy.png" />
     <Content Include="$(MSBuildThisFileDirectory)img\numbers.png" />
-    <Content Include="$(MSBuildThisFileDirectory)img\numbers1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)img\photo.png" />
     <Content Include="$(MSBuildThisFileDirectory)sounds\0.wma" />
     <Content Include="$(MSBuildThisFileDirectory)sounds\1.wma" />
     <Content Include="$(MSBuildThisFileDirectory)sounds\2.wma" />

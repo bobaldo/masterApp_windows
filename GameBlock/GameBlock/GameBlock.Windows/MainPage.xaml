@@ -208,17 +208,13 @@
                 <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana">0</TextBlock>
             </Button>
 
-            <StackPanel Orientation="Horizontal">
-                <CaptureElement x:Name="capturePreview" Width="320" Height="240" />
-                <Image x:Name="imagePreivew" Stretch="None" Width="320" Height="240" />
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal">
-                <Button Click="InitCamera_Click" Content="Initialize Camera" />
-                <Button Click="StartCapturePreview_Click" Content="Start Capture Preview" />
-                <Button Click="CapturePhoto_Click" Content="Capture Photo"/>
-                <Button Click="StopCapturePreview_Click" Content="Stop Capture Preview" />
-            </StackPanel>
+            <Button x:Name="photo" Content="Pulisci" Height="50" Canvas.Left="500" Canvas.Top="27" Click="photo_Click">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="/img/photo.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
 
             <Button x:Name="erase" Content="Pulisci" Height="50" Canvas.Left="1229" Canvas.Top="27" Click="erase_Click">
                 <Button.Template>

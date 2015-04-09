@@ -1,7 +1,6 @@
 img\erase.jpg
-img\numbers - Copy.png
 img\numbers.png
-img\numbers1.png
+img\photo.png
 sounds\0.wma
 sounds\1.wma
 sounds\2.wma
@@ -17,5 +16,6 @@ Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
 Assets\StoreLogo.scale-100.png
 App.xbf
-GameBlock.Windows.xr.xml
+ImparaNumeri.xr.xml
 MainPage.xbf
+PhotoPage.xbf

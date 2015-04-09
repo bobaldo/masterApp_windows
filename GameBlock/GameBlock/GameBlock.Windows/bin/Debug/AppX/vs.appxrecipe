@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>798073c2-ccee-48ff-b064-975ea29027a2</PackageIdentityName>
     <IntermediateOutputPath>D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>BDE750B5344FC9E21C0864B7DC20B17BBCC8872146F17414978CF1AAB525CB4F</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>CDEBEEE466B115A765E9530A7019828636A6C176425DDA7DE942A665116C8B39</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>798073c2-ccee-48ff-b064-975ea29027a2_1.0.0.0_neutral__79djab9jn1ad0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>798073c2-ccee-48ff-b064-975ea29027a2_79djab9jn1ad0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>798073c2-ccee-48ff-b064-975ea29027a2</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-12T11:51:47.081</Modified>
+      <Modified>2015-04-09T11:18:03.160</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.exe">
-      <PackagePath>GameBlock.Windows.exe</PackagePath>
-      <Modified>2015-03-12T12:23:17.244</Modified>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\ImparaNumeri.exe">
+      <PackagePath>ImparaNumeri.exe</PackagePath>
+      <Modified>2015-04-09T12:33:00.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -48,17 +48,13 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-01-18T19:40:02.554</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers - Copy.png">
-      <PackagePath>img\numbers - Copy.png</PackagePath>
-      <Modified>2015-02-26T15:14:43.768</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers.png">
       <PackagePath>img\numbers.png</PackagePath>
       <Modified>2015-02-26T15:14:43.768</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\numbers1.png">
-      <PackagePath>img\numbers1.png</PackagePath>
-      <Modified>2015-02-04T16:53:55.325</Modified>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\photo.png">
+      <PackagePath>img\photo.png</PackagePath>
+      <Modified>2015-04-09T11:16:12.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Shared\img\erase.jpg">
       <PackagePath>img\erase.jpg</PackagePath>
@@ -106,19 +102,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-01-18T09:51:03.931</Modified>
+      <Modified>2015-04-09T11:17:32.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-03-12T12:23:16.599</Modified>
+      <Modified>2015-04-09T12:32:40.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\GameBlock.Windows.xr.xml">
-      <PackagePath>GameBlock.Windows.xr.xml</PackagePath>
-      <Modified>2015-03-12T12:23:16.541</Modified>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\PhotoPage.xbf">
+      <PackagePath>PhotoPage.xbf</PackagePath>
+      <Modified>2015-04-09T12:32:40.334</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\ImparaNumeri.xr.xml">
+      <PackagePath>ImparaNumeri.xr.xml</PackagePath>
+      <Modified>2015-04-09T12:32:40.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-12T11:51:46.947</Modified>
+      <Modified>2015-04-09T11:18:03.081</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

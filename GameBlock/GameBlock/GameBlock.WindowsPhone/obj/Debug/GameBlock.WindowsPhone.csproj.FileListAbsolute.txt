@@ -1,3 +1,10 @@
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\App.xbf
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\MainPage.xbf
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.xr.xml
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.exe
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.pdb
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\resources.pri
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\AppxManifest.xml
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\App.g.i.cs
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\App.g.cs
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\MainPage.g.i.cs
@@ -8,14 +15,6 @@ D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debu
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\App.xbf
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\MainPage.xbf
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\App.xbf
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\MainPage.xbf
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.xr.xml
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.exe
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.pdb
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\resources.pri
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\AppxManifest.xml
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.build.appxrecipe
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\GameBlock.WindowsPhone.exe
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\GameBlock.WindowsPhone.pdb
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\priconfig.xml
@@ -30,8 +29,3 @@ D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debu
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\ProjectArchitectures.txt
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\Sounds.xbf
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\Sounds.g.i.cs
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\Sounds.g.cs
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\Sounds.xaml
-D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\Sounds.xbf

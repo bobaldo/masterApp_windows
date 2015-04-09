@@ -2,7 +2,17 @@ img\erase.jpg
 img\numbers - Copy.png
 img\numbers.png
 img\numbers1.png
+img\photo.png
+sounds\0.wma
 sounds\1.wma
+sounds\2.wma
+sounds\3.wma
+sounds\4.wma
+sounds\5.wma
+sounds\6.wma
+sounds\7.wma
+sounds\8.wma
+sounds\9.wma
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -12,4 +22,3 @@ Assets\WideLogo.scale-240.png
 App.xbf
 GameBlock.WindowsPhone.xr.xml
 MainPage.xbf
-Sounds.xbf

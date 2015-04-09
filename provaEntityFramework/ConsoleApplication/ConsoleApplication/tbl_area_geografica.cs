@@ -10,9 +10,10 @@ namespace ConsoleApplication
     {
         public int id { get; set; }
 
+        [Column ("descrizione_it")]
         [Required]
         [StringLength(100)]
-        public string descrizione_it { get; set; }
+        public string descrizioneIt { get; set; }
 
         [StringLength(100)]
         public string descrizione_en { get; set; }

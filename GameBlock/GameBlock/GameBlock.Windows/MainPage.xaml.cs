@@ -28,15 +28,37 @@ namespace GameBlock
         public MainPage()
         {
             this.InitializeComponent();
+            loadImage();
         }
 
-        public static DependencyProperty CurrentValueProperty =
-            DependencyProperty.Register("Numbers", typeof(string), typeof(MainPage), new PropertyMetadata(""));
+        public static DependencyProperty CurrentValueProperty = DependencyProperty.Register("Numbers", typeof(string), typeof(MainPage), new PropertyMetadata(""));
 
         public string Numbers
         {
             get { return GetValue(CurrentValueProperty) as string; }
             set { SetValue(CurrentValueProperty, value); }
+        }
+
+        async private void loadImage()
+        {
+            try
+            {
+                Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(
+                    Constant.NameImageSaved);
+
+                BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
+                if (bmpImage != null)
+                {
+                    for (int i = 1; i < 10; i++)
+                    {
+                        if (FindName("i" + i) is Image)
+                        {
+                            (FindName("i" + i) as Image).Source = bmpImage;
+                        }
+                    }
+                }
+            }
+            catch { }
         }
 
         private void setControlView(string content)
@@ -153,47 +175,57 @@ namespace GameBlock
                 setControlView(((sender as Button).Content as TextBlock).Text);
         }
 
+        private void photo_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PhotoPage));
+        }
+
         #region CAMERA
-        Windows.Media.Capture.MediaCapture captureManager;
+        //Windows.Media.Capture.MediaCapture captureManager;
 
-        async private void InitCamera_Click(object sender, RoutedEventArgs e)
-        {
-            captureManager = new MediaCapture();
-            await captureManager.InitializeAsync();
-        }
+        //async private void InitCamera_Click(object sender, RoutedEventArgs e)
+        //{
 
-        async private void StartCapturePreview_Click(object sender, RoutedEventArgs e)
-        {
-            capturePreview.Source = captureManager;
-            await captureManager.StartPreviewAsync();
-        }
+        //}
 
-        async private void StopCapturePreview_Click(object sender, RoutedEventArgs e)
-        {
-            await captureManager.StopPreviewAsync();
-        }
+        //async private void StartCapturePreview_Click(object sender, RoutedEventArgs e)
+        //{
+        //    
 
-        async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
-        {
-            ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
+        //    captureManager = new MediaCapture();
+        //    await captureManager.InitializeAsync();
+        //    capturePreview.Source = captureManager;
+        //    await captureManager.StartPreviewAsync();
+        //}
 
-            // create storage file in local app storage
-            Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(
-                "numbers.png",
-                Windows.Storage.CreationCollisionOption.ReplaceExisting);
+        //async private void StopCapturePreview_Click(object sender, RoutedEventArgs e)
+        //{
+        //    await captureManager.StopPreviewAsync();
+        //}
 
-            // take photo
-            await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
+        //async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
+        //    imgFormat.Height = imgFormat.Width = 150;
 
-            // Get photo as a BitmapImage
-            BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
+        //    // create storage file in local app storage
+        //    Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(
+        //        Constant.NameImageSaved,
+        //        Windows.Storage.CreationCollisionOption.ReplaceExisting);
 
-            // imagePreivew is a <Image> object defined in XAML
-            imagePreivew.Source = bmpImage;
-        }
+        //    // take photo
+        //    await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
+
+        //    // Get photo as a BitmapImage
+        //    BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
+
+        //    //TODO: cambiare tutte le immagini presenti da i1 a i9
+        //    //imagePreivew is a <Image> object defined in XAML
+        //    //imagePreivew.Source = bmpImage;
+        //    i9.Source = bmpImage;
+
+        //}
         #endregion
-
-        
         #endregion
     }
 }

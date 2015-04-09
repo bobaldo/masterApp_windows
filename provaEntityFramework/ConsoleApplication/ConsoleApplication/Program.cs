@@ -16,17 +16,17 @@ namespace ConsoleApplication
             insertVacancyAsync();
             foreach (var item in selectVacancy())
             {
-                Console.WriteLine("codice: \t" + item.codice + "\t job title: \t" + item.job_title);
+                Console.WriteLine("codice: \t" + item.codice + "\t job title: \t" + item.jobTitle);
 
             }
-            foreach (var item in selectSettore())
-            {
-                Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
-            }
-            foreach (var item in selectLingua())
-            {
-                Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
-            }
+            //foreach (var item in selectSettore())
+            //{
+            //    Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
+            //}
+            //foreach (var item in selectLingua())
+            //{
+            //    Console.WriteLine("id:\t" + item.id + "\tdescrizione:\t" + item.descrizione_it);
+            //}
             Console.ReadLine();
         }
 
@@ -71,7 +71,7 @@ namespace ConsoleApplication
                 item.codice = "ASYNC";
                 item.id = Guid.NewGuid();
                 item.data_apertura = DateTime.Now;
-                item.job_title = "PD";
+                item.jobTitle = "PD 17/03/2015 - DONE";
                 item.lingua = lingua.First().descrizione_it;
                 item.numero_persone_cercate = 0;
                 item.ordine = 99;
@@ -93,7 +93,7 @@ namespace ConsoleApplication
                 item.codice = "ABACO";
                 item.id = Guid.NewGuid();
                 item.data_apertura = DateTime.Now;
-                item.job_title = "PD";
+                item.jobTitle = "PD";
                 item.lingua = lingua.First().descrizione_it;
                 item.numero_persone_cercate = 0;
                 item.ordine = 99;
