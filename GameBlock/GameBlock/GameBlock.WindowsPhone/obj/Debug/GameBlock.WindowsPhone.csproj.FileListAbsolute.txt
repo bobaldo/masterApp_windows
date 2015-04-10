@@ -29,3 +29,4 @@ D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debu
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.WindowsPhone\bin\Debug\GameBlock.WindowsPhone.build.appxrecipe
