@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-04-09T11:18:03.160</Modified>
+      <Modified>2015-04-10T13:41:30.803</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\ImparaNumeri.exe">
       <PackagePath>ImparaNumeri.exe</PackagePath>
-      <Modified>2015-04-09T12:53:35.615</Modified>
+      <Modified>2015-04-12T08:31:00.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -102,15 +102,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-04-09T11:17:32.355</Modified>
+      <Modified>2015-04-10T13:41:29.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-04-09T12:32:40.332</Modified>
+      <Modified>2015-04-10T13:41:29.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\PhotoPage.xbf">
       <PackagePath>PhotoPage.xbf</PackagePath>
-      <Modified>2015-04-09T12:32:40.334</Modified>
+      <Modified>2015-04-10T13:41:29.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\ImparaNumeri.xr.xml">
       <PackagePath>ImparaNumeri.xr.xml</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-04-09T11:18:03.081</Modified>
+      <Modified>2015-04-10T13:41:29.725</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
