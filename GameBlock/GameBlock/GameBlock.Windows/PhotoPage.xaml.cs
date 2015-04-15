@@ -26,15 +26,17 @@ namespace GameBlock
         private StorageFile file;
         private ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
         private MediaCapture captureManager;
+        private int countCapture = -1;
+
         public PhotoPage()
         {
             this.InitializeComponent();
             imgFormat.Height = Constant.DimensionHeightImageSaved;
             imgFormat.Width = Constant.DimensionWidthImageSaved;
-            loadCamera();
+            loadCameraAndFile();
         }
 
-        async private void loadCamera()
+        async private void loadCameraAndFile()
         {
             try
             {
@@ -56,20 +58,36 @@ namespace GameBlock
 
         async private void StopCapturePreview_Click(object sender, RoutedEventArgs e)
         {
-            await captureManager.StopPreviewAsync();
-            this.Frame.Navigate(typeof(MainPage));
+            try
+            {
+                await captureManager.StopPreviewAsync();
+                int i = 0;
+                for (i = 0; i < countCapture; i++)
+                {
+                    file = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, i));
+                    await file.DeleteAsync();
+                }
+                file = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, i));
+                await file.RenameAsync(Constant.NameImageFinal);
+
+                this.Frame.Navigate(typeof(MainPage));
+            }
+            catch { }
         }
 
         async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: non funziona il secondo salvataggio - problema di cache ????
-            file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(Constant.NameImageSaved,
-                CreationCollisionOption.ReplaceExisting);
+            try
+            {
+                countCapture = countCapture + 1;
+                file = await ApplicationData.Current.LocalFolder.CreateFileAsync(String.Format(Constant.NameImageWork, countCapture),
+                    CreationCollisionOption.ReplaceExisting);
+                await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
 
-            await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
-            BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
-            imagePreivew.Source = null;
-            imagePreivew.Source = bmpImage;
+                BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
+                imagePreivew.Source = bmpImage;
+            }
+            catch { }
         }
     }
 }

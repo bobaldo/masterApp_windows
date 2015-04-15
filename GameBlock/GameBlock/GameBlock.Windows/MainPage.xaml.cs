@@ -8,6 +8,7 @@ using Windows.Foundation.Collections;
 using Windows.Graphics.Imaging;
 using Windows.Media.Capture;
 using Windows.Media.MediaProperties;
+using Windows.Storage;
 using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -43,9 +44,9 @@ namespace GameBlock
         {
             try
             {
-                Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(
-                    Constant.NameImageSaved);
-
+                StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(
+                    Constant.NameImageFinal);
+                
                 BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
                 if (bmpImage != null)
                 {
@@ -53,6 +54,7 @@ namespace GameBlock
                     {
                         if (FindName("i" + i) is Image)
                         {
+                            ;
                             (FindName("i" + i) as Image).Source = bmpImage;
                         }
                     }
