@@ -179,54 +179,6 @@ namespace GameBlock
         {
             this.Frame.Navigate(typeof(PhotoPage));
         }
-
-        //TODO: remove
-        #region CAMERA
-        //Windows.Media.Capture.MediaCapture captureManager;
-
-        //async private void InitCamera_Click(object sender, RoutedEventArgs e)
-        //{
-
-        //}
-
-        //async private void StartCapturePreview_Click(object sender, RoutedEventArgs e)
-        //{
-        //    
-
-        //    captureManager = new MediaCapture();
-        //    await captureManager.InitializeAsync();
-        //    capturePreview.Source = captureManager;
-        //    await captureManager.StartPreviewAsync();
-        //}
-
-        //async private void StopCapturePreview_Click(object sender, RoutedEventArgs e)
-        //{
-        //    await captureManager.StopPreviewAsync();
-        //}
-
-        //async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
-        //{
-        //    ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
-        //    imgFormat.Height = imgFormat.Width = 150;
-
-        //    // create storage file in local app storage
-        //    Windows.Storage.StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(
-        //        Constant.NameImageSaved,
-        //        Windows.Storage.CreationCollisionOption.ReplaceExisting);
-
-        //    // take photo
-        //    await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
-
-        //    // Get photo as a BitmapImage
-        //    BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
-
-        //    //TODO: cambiare tutte le immagini presenti da i1 a i9
-        //    //imagePreivew is a <Image> object defined in XAML
-        //    //imagePreivew.Source = bmpImage;
-        //    i9.Source = bmpImage;
-
-        //}
-        #endregion
         #endregion
     }
 }

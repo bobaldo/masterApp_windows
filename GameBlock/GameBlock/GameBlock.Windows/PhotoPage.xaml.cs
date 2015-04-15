@@ -7,7 +7,9 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Media.Capture;
 using Windows.Media.MediaProperties;
+using Windows.Storage;
 using Windows.Storage.Streams;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,36 +23,35 @@ namespace GameBlock
 {
     public sealed partial class PhotoPage : Page
     {
-        private Windows.Storage.StorageFile file;
-        private ImageEncodingProperties imgFormat;
-        private Windows.Media.Capture.MediaCapture captureManager;
+        private StorageFile file;
+        private ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
+        private MediaCapture captureManager;
         public PhotoPage()
         {
             this.InitializeComponent();
-            //TODO: fare in modo che quando venga caricata la pagina si avvii la camera
-
+            imgFormat.Height = Constant.DimensionHeightImageSaved;
+            imgFormat.Width = Constant.DimensionWidthImageSaved;
+            loadCamera();
         }
 
-        async private void Start_Click(object sender, RoutedEventArgs e)
+        async private void loadCamera()
         {
             try
             {
                 captureManager = new MediaCapture();
                 await captureManager.InitializeAsync();
                 capturePreview.Source = captureManager;
-                await captureManager.StartPreviewAsync();
-
-                
-                //await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
-
-                 imgFormat = ImageEncodingProperties.CreatePng();
-                imgFormat.Height = Constant.DimensionHeightImageSaved;
-                imgFormat.Width = Constant.DimensionWidthImageSaved;
+                captureManager.StartPreviewAsync().Completed += new AsyncActionCompletedHandler(completeCameraLoad);
             }
-            catch (Exception ex)
+            catch { }
+        }
+
+        private void completeCameraLoad(IAsyncAction asyncInfo, AsyncStatus asyncStatus)
+        {
+            var upUI = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
-                string a = ex.Message;
-            }
+                CapturePhoto.IsEnabled = true;
+            });
         }
 
         async private void StopCapturePreview_Click(object sender, RoutedEventArgs e)
@@ -61,13 +62,9 @@ namespace GameBlock
 
         async private void CapturePhoto_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                await file.DeleteAsync(Windows.Storage.StorageDeleteOption.Default);
-            }
-            catch { }
+            //TODO: non funziona il secondo salvataggio - problema di cache ????
             file = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync(Constant.NameImageSaved,
-            Windows.Storage.CreationCollisionOption.ReplaceExisting);
+                CreationCollisionOption.ReplaceExisting);
 
             await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
             BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));

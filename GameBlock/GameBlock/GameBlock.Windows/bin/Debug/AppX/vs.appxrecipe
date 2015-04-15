@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\ImparaNumeri.exe">
       <PackagePath>ImparaNumeri.exe</PackagePath>
-      <Modified>2015-04-12T08:31:00.961</Modified>
+      <Modified>2015-04-15T11:18:04.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -110,11 +110,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\PhotoPage.xbf">
       <PackagePath>PhotoPage.xbf</PackagePath>
-      <Modified>2015-04-10T13:41:29.022</Modified>
+      <Modified>2015-04-15T11:02:23.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\ImparaNumeri.xr.xml">
       <PackagePath>ImparaNumeri.xr.xml</PackagePath>
-      <Modified>2015-04-09T12:32:40.239</Modified>
+      <Modified>2015-04-15T11:02:23.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

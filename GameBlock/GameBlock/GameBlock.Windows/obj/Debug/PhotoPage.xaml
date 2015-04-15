@@ -9,16 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Canvas>
-            <StackPanel Canvas.Top="10" Orientation="Horizontal">
-                <!--<Button Click="InitCamera_Click" Content="Initialize Camera" />-->
-                <!--Button  Click="StartCapturePreview_Click" Content="Start Capture Preview" /-->
-                <Button x:ConnectionId='1'                     Content="Start"/>
-                <Button x:ConnectionId='2'                            Content="Capture Photo"/>
-                <Button x:ConnectionId='3'                                  Content="X" />
-            </StackPanel>
 
-             <CaptureElement Canvas.Top="150" Canvas.Left="400" x:Name="capturePreview" Width="400" Height="400" />
-             <Image Canvas.Top="150" Canvas.Left="800" x:Name="imagePreivew" Stretch="None" Width="400" Height="400" />
+            <CaptureElement Canvas.Top="150" Canvas.Left="400" x:Name="capturePreview" Width="400" Height="400" />
+            <Image Canvas.Top="150" Canvas.Left="800" x:Name="imagePreivew" Stretch="None" Width="400" Height="400" />
+
+            <StackPanel Canvas.Top="580" Canvas.Left="400" Orientation="Horizontal">
+                <Button x:ConnectionId='1' x:Name="CapturePhoto"                            Content="Capture Photo" IsEnabled="False"/>
+                <Button x:ConnectionId='2'                                  Content="X" />
+            </StackPanel>
         </Canvas>
     </Grid>
 </Page>
