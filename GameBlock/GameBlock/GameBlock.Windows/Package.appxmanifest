@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GameBlock.Windows.App">
-      <m2:VisualElements DisplayName="ImparaNumeri" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Impare Numeri è una semplice applicazione per impare le cifre" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="LeCifre" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="LeCifre è una semplice applicazione per impare le cifre" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
         <m2:InitialRotationPreference>
           <m2:Rotation Preference="landscape" />
