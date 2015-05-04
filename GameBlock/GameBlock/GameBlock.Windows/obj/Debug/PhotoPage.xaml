@@ -14,7 +14,13 @@
             <Image Canvas.Top="150" Canvas.Left="800" x:Name="imagePreivew" Stretch="None" Width="400" Height="400" />
 
             <StackPanel Canvas.Top="580" Canvas.Left="400" Orientation="Horizontal">
-                <Button x:ConnectionId='1' x:Name="CapturePhoto"                            Content="Capture Photo" IsEnabled="False"/>
+                <Button x:ConnectionId='1' x:Name="CapturePhoto" IsEnabled="False" Content="Pulisci" Height="50" Canvas.Left="500" Canvas.Top="27"                           >
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Source="/img/photo.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
                 <Button x:ConnectionId='2'                                  Content="X" />
             </StackPanel>
         </Canvas>

@@ -29,7 +29,6 @@ namespace GameBlock
         public MainPage()
         {
             this.InitializeComponent();
-            loadImage();
         }
 
         public static DependencyProperty CurrentValueProperty = DependencyProperty.Register("Numbers", typeof(string), typeof(MainPage), new PropertyMetadata(""));
@@ -44,18 +43,18 @@ namespace GameBlock
         {
             try
             {
-                StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(
-                    Constant.NameImageFinal);
-                
+                StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(Constant.NameImageFinal);
                 BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
+                
                 if (bmpImage != null)
                 {
                     for (int i = 1; i < 10; i++)
                     {
                         if (FindName("i" + i) is Image)
                         {
-                            ;
-                            (FindName("i" + i) as Image).Source = bmpImage;
+                            (FindName("i" + i) as Image).CacheMode = new BitmapCache();
+                            (FindName("i" + i) as Image).Source = new BitmapImage(new Uri(file.Path));
+                            //(FindName("i" + i) as Image).Source = bmpImage;
                         }
                     }
                 }
@@ -88,6 +87,7 @@ namespace GameBlock
 
         private void setImageVisibility(int numberImgVisible)
         {
+            //loadImage();
             for (int i = 0; i < 10; i++)
             {
                 if (FindName("i" + i) is Image)

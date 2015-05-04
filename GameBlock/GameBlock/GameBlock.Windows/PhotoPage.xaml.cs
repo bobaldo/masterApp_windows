@@ -60,6 +60,14 @@ namespace GameBlock
         {
             try
             {
+                try
+                {
+                    //cancello l'immagine finale
+                    StorageFile finalFile = await ApplicationData.Current.LocalFolder.GetFileAsync(Constant.NameImageFinal);
+                    await finalFile.DeleteAsync();
+                }
+                catch { }
+
                 await captureManager.StopPreviewAsync();
                 int i = 0;
                 for (i = 0; i < countCapture; i++)
@@ -67,12 +75,16 @@ namespace GameBlock
                     file = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, i));
                     await file.DeleteAsync();
                 }
+
                 file = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, i));
                 await file.RenameAsync(Constant.NameImageFinal);
-
                 this.Frame.Navigate(typeof(MainPage));
             }
             catch { }
+            finally
+            {
+                this.Frame.Navigate(typeof(MainPage));
+            }
         }
 
         async private void CapturePhoto_Click(object sender, RoutedEventArgs e)

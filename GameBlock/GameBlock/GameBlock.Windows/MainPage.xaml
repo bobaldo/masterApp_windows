@@ -224,8 +224,6 @@
                 </Button.Template>
             </Button>
             
-                
-            
             <Canvas x:Name="listImg" Height="450" Canvas.Left="600" Canvas.Top="307" Width="450">
                 <Image x:Name="i1" Visibility="Collapsed" Source="/img/numbers.png">
                     <Image.RenderTransform>
