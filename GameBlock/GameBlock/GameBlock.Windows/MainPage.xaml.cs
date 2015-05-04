@@ -54,7 +54,6 @@ namespace GameBlock
                         {
                             (FindName("i" + i) as Image).CacheMode = new BitmapCache();
                             (FindName("i" + i) as Image).Source = new BitmapImage(new Uri(file.Path));
-                            //(FindName("i" + i) as Image).Source = bmpImage;
                         }
                     }
                 }
