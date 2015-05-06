@@ -26,14 +26,15 @@ namespace GameBlock
         private StorageFile file;
         private ImageEncodingProperties imgFormat = ImageEncodingProperties.CreatePng();
         private MediaCapture captureManager;
-        private int countCapture = -1;
+        private bool makeFoto = false;
 
         public PhotoPage()
         {
             this.InitializeComponent();
+            loadCameraAndFile();
+            ManageImage.resetCountCapture();
             imgFormat.Height = Constant.DimensionHeightImageSaved;
             imgFormat.Width = Constant.DimensionWidthImageSaved;
-            loadCameraAndFile();
         }
 
         async private void loadCameraAndFile()
@@ -60,24 +61,11 @@ namespace GameBlock
         {
             try
             {
-                try
-                {
-                    //cancello l'immagine finale
-                    StorageFile finalFile = await ApplicationData.Current.LocalFolder.GetFileAsync(Constant.NameImageFinal);
-                    await finalFile.DeleteAsync();
-                }
-                catch { }
-
                 await captureManager.StopPreviewAsync();
-                int i = 0;
-                for (i = 0; i < countCapture; i++)
-                {
-                    file = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, i));
-                    await file.DeleteAsync();
-                }
+                if (!makeFoto)
+                    ManageImage.roolbackCountCapture();
 
-                file = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, i));
-                await file.RenameAsync(Constant.NameImageFinal);
+
                 this.Frame.Navigate(typeof(MainPage));
             }
             catch { }
@@ -91,13 +79,23 @@ namespace GameBlock
         {
             try
             {
-                countCapture = countCapture + 1;
-                file = await ApplicationData.Current.LocalFolder.CreateFileAsync(String.Format(Constant.NameImageWork, countCapture),
+                if (!makeFoto)
+                {
+                    foreach (var item in await ApplicationData.Current.LocalFolder.GetFilesAsync())
+                    {
+                        if (item.Name.Contains(".png"))
+                            await item.DeleteAsync();
+                    }
+                }
+                makeFoto = true;
+
+                ManageImage.addCountCapture();
+                file = await ApplicationData.Current.LocalFolder.CreateFileAsync(
+                    String.Format(Constant.NameImageWork, ManageImage.CountCapture),
                     CreationCollisionOption.ReplaceExisting);
                 await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
 
-                BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
-                imagePreivew.Source = bmpImage;
+                imagePreivew.Source = new BitmapImage(new Uri(file.Path));
             }
             catch { }
         }

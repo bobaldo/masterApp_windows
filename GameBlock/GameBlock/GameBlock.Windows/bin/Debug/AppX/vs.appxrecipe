@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-05-04T09:11:33.127</Modified>
+      <Modified>2015-05-06T09:47:55.527</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\com.davidepatrizi.LeCifre.exe">
       <PackagePath>com.davidepatrizi.LeCifre.exe</PackagePath>
-      <Modified>2015-05-04T11:03:49.510</Modified>
+      <Modified>2015-05-06T10:06:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -102,15 +102,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-05-04T09:11:31.358</Modified>
+      <Modified>2015-05-05T07:57:57.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-05-04T11:03:49.170</Modified>
+      <Modified>2015-05-05T07:57:57.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\PhotoPage.xbf">
       <PackagePath>PhotoPage.xbf</PackagePath>
-      <Modified>2015-05-04T11:03:49.177</Modified>
+      <Modified>2015-05-05T07:57:57.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\com.davidepatrizi.LeCifre.xr.xml">
       <PackagePath>com.davidepatrizi.LeCifre.xr.xml</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-05-04T09:11:32.155</Modified>
+      <Modified>2015-05-06T09:47:55.005</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

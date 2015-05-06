@@ -39,28 +39,6 @@ namespace GameBlock
             set { SetValue(CurrentValueProperty, value); }
         }
 
-        async private void loadImage()
-        {
-            try
-            {
-                StorageFile file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(Constant.NameImageFinal);
-                BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
-                
-                if (bmpImage != null)
-                {
-                    for (int i = 1; i < 10; i++)
-                    {
-                        if (FindName("i" + i) is Image)
-                        {
-                            (FindName("i" + i) as Image).CacheMode = new BitmapCache();
-                            (FindName("i" + i) as Image).Source = new BitmapImage(new Uri(file.Path));
-                        }
-                    }
-                }
-            }
-            catch { }
-        }
-
         private void setControlView(string content)
         {
             if (!String.IsNullOrEmpty(content))
@@ -73,7 +51,7 @@ namespace GameBlock
                 if (FindName("s" + content) is Storyboard)
                     (FindName("s" + content) as Storyboard).Begin();
 
-                setImageVisibility(Int32.Parse(content));
+                setImage(Int32.Parse(content));
                 playMp3(content);
             }
         }
@@ -84,15 +62,22 @@ namespace GameBlock
                 (FindName("sound" + content) as MediaElement).Play();
         }
 
-        private void setImageVisibility(int numberImgVisible)
+        async private  void setImage(int numberImgVisible)
         {
-            //loadImage();
             for (int i = 0; i < 10; i++)
             {
                 if (FindName("i" + i) is Image)
                 {
                     if (i <= numberImgVisible)
                     {
+                        try
+                        {
+                            StorageFile fileGood = await ApplicationData.Current.LocalFolder.GetFileAsync(String.Format(Constant.NameImageWork, ManageImage.CountCapture));
+                            (FindName("i" + i) as Image).Source = new BitmapImage(new Uri(fileGood.Path));
+                            (FindName("i" + i) as Image).CacheMode = new BitmapCache();
+                        }
+                        catch { }
+
                         (FindName("i" + i) as Image).Visibility = Visibility.Visible;
 
                         Storyboard sb = (FindName("animateImage" + i) as Storyboard);
@@ -112,7 +97,7 @@ namespace GameBlock
         {
             Numbers = "";
             numbers = 10;
-            setImageVisibility(0);
+            setImage(0);
         }
 
         private void btnNumber_Click(object sender, RoutedEventArgs e)
@@ -181,5 +166,6 @@ namespace GameBlock
             this.Frame.Navigate(typeof(PhotoPage));
         }
         #endregion
+    
     }
 }
