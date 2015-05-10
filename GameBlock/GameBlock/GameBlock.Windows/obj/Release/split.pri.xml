@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="26475DavidePatrizi.LeCifre" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>80, 100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="com.davidepatrizi.LeCifre.xr.xml" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/com.davidepatrizi.LeCifre.xr.xml">
+				<Candidate type="Path">
+					<Value>com.davidepatrizi.LeCifre.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PhotoPage.xbf" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/PhotoPage.xbf">
+				<Candidate type="Path">
+					<Value>PhotoPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Square70x70Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Wide310x150Logo.png"/>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="img">
+				<NamedResource name="erase.jpg" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/img/erase.jpg">
+					<Candidate type="Path">
+						<Value>img\erase.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="numbers.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/img/numbers.png">
+					<Candidate type="Path">
+						<Value>img\numbers.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="photo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/img/photo.png">
+					<Candidate type="Path">
+						<Value>img\photo.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="sounds">
+				<NamedResource name="0.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/0.wma">
+					<Candidate type="Path">
+						<Value>sounds\0.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="1.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/1.wma">
+					<Candidate type="Path">
+						<Value>sounds\1.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="2.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/2.wma">
+					<Candidate type="Path">
+						<Value>sounds\2.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="3.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/3.wma">
+					<Candidate type="Path">
+						<Value>sounds\3.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="4.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/4.wma">
+					<Candidate type="Path">
+						<Value>sounds\4.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="5.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/5.wma">
+					<Candidate type="Path">
+						<Value>sounds\5.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="6.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/6.wma">
+					<Candidate type="Path">
+						<Value>sounds\6.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="7.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/7.wma">
+					<Candidate type="Path">
+						<Value>sounds\7.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="8.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/8.wma">
+					<Candidate type="Path">
+						<Value>sounds\8.wma</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="9.wma" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/sounds/9.wma">
+					<Candidate type="Path">
+						<Value>sounds\9.wma</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
