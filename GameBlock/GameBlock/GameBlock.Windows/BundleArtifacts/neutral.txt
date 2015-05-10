@@ -1,0 +1,4 @@
+MainPackage=D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Release\GameBlock.Windows_1.1.0.1_Bundle\GameBlock.Windows_1.1.0.1_AnyCPU.appx
+SymbolPackage=D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\AppPackages\GameBlock.Windows_1.1.0.1_Test\GameBlock.Windows_1.1.0.1_AnyCPU.appxsym
+ResourcePack=D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Release\GameBlock.Windows_1.1.0.1_Bundle\GameBlock.Windows_1.1.0.1_scale-140.appx
+ResourcePack=D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Release\GameBlock.Windows_1.1.0.1_Bundle\GameBlock.Windows_1.1.0.1_scale-180.appx

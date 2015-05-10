@@ -1,0 +1,1 @@
+D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\AppPackages\GameBlock.Windows_1.1.0.1_Test\GameBlock.Windows_1.1.0.1_AnyCPU.appxbundle

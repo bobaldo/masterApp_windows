@@ -3,6 +3,7 @@
 	<ResourceMap name="26475DavidePatrizi.LeCifre" version="1.0" primary="true">
 		<Qualifiers>
 			<Scale>80, 100</Scale>
+			<TargetSize>48, 32, 256, 16</TargetSize>
 		</Qualifiers>
 		<ResourceMapSubtree name="Files">
 			<NamedResource name="App.xbf" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/App.xbf">
@@ -35,6 +36,21 @@
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="SmallLogo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-80.png</Value>
+					</Candidate>
 					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
 						<Value>Assets\SmallLogo.scale-100.png</Value>
 					</Candidate>
@@ -42,6 +58,14 @@
 				<NamedResource name="SplashScreen.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/SplashScreen.png">
 					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
 						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-100.png</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="Square70x70Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Square70x70Logo.png">
@@ -57,7 +81,14 @@
 						<Value>Assets\StoreLogo.scale-100.png</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Wide310x150Logo.png"/>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="img">
 				<NamedResource name="erase.jpg" uri="ms-resource://26475DavidePatrizi.LeCifre/Files/img/erase.jpg">

@@ -8,19 +8,19 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>26475DavidePatrizi.LeCifre</PackageIdentityName>
     <IntermediateOutputPath>D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\obj\Release\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>CBFEA2767C50C5431794BB10B4D749F41EF614F134F6D538706BDA956337111A</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>26475DavidePatrizi.LeCifre_1.1.0.0_neutral__t3thnehee7z9t</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>75A1AB3837EACC85196059577638BB400E76A1E5A70B6D695031DC35F1C39ADA</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>26475DavidePatrizi.LeCifre_1.1.0.1_neutral__t3thnehee7z9t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>26475DavidePatrizi.LeCifre_t3thnehee7z9t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>26475DavidePatrizi.LeCifre</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=9D1888B0-EC06-404C-8F07-9F98A43A6AFA</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <RegisteredVersion>1.1.0.1</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-05-10T06:49:45.082</Modified>
+      <Modified>2015-05-10T06:52:04.714</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -228,7 +228,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\_gitHub\masterApp_windows\GameBlock\GameBlock\GameBlock.Windows\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-05-10T06:49:44.760</Modified>
+      <Modified>2015-05-10T06:52:04.527</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

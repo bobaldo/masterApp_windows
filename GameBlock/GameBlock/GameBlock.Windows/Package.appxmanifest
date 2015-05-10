@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="26475DavidePatrizi.LeCifre" Publisher="CN=9D1888B0-EC06-404C-8F07-9F98A43A6AFA" Version="1.1.0.0" />
+  <Identity Name="26475DavidePatrizi.LeCifre" Publisher="CN=9D1888B0-EC06-404C-8F07-9F98A43A6AFA" Version="1.1.0.1" />
   <Properties>
     <DisplayName>LeCifre</DisplayName>
     <PublisherDisplayName>Davide Patrizi</PublisherDisplayName>
