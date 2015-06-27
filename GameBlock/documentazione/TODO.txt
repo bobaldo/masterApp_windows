@@ -1,0 +1,3 @@
+spostare slider più verso la textbox
+inserire l'immagine della gomma dentro la texbox
+inserire l'immagine per l'audio
